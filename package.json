@@ -1,0 +1,19 @@
+{
+  "name": "barbershop",
+  "version": "0.1.0",
+  "description": "Адаптивная версия проекта Barbershop",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ge11ert/262023-barbershop.git"
+  },
+  "author": "Gellert",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ge11ert/262023-barbershop/issues"
+  },
+  "homepage": "https://github.com/Ge11ert/262023-barbershop#readme"
+}
