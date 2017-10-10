@@ -43,5 +43,8 @@
   "bugs": {
     "url": "https://github.com/Ge11ert/262023-barbershop/issues"
   },
-  "homepage": "https://github.com/Ge11ert/262023-barbershop#readme"
+  "homepage": "https://github.com/Ge11ert/262023-barbershop#readme",
+  "dependencies": {
+    "svgo": "^0.7.2"
+  }
 }
