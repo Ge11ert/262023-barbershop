@@ -405,13 +405,86 @@ template {
   overflow: hidden; }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "PT Sans Narrow";
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff"); }
+  src: url("../fonts/ptsansnarrow.woff2") format("woff2"), url("../fonts/ptsansnarrow.woff") format("woff"); }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "PT Sans Narrow";
   font-weight: bold;
   font-style: normal;
-  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff"); }
+  src: url("../fonts/ptsansnarrowbold.woff2") format("woff2"), url("../fonts/ptsansnarrowbold.woff") format("woff"); }
+
+body {
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 27px; }
+
+.header {
+  max-width: 320px;
+  background-color: #242424; }
+  .header .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 85px; }
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .main-nav .main-nav__toggle {
+    width: 70px;
+    height: 50px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    background-color: #6a4d38;
+    background-image: url("../img/icon-cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 26px 25px;
+    border: none; }
+  .main-nav .main-nav__wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    min-height: 400px;
+    background-color: #6a4d38; }
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .site-nav .site-nav__link {
+    display: block;
+    padding: 13px 21px;
+    line-height: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #826550; }
+
+.user-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .user-nav .user-nav__link {
+    display: block;
+    padding: 13px 21px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #6a4d38; }

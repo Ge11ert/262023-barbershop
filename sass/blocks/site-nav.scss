@@ -1,0 +1,16 @@
+.site-nav {
+  @include list-reset;
+
+  .site-nav__link {
+    display: block;
+    padding: 13px 21px;
+
+    line-height: 24px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    background-color: $light-brown;
+  }
+}

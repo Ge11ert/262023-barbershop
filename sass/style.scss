@@ -1,3 +1,12 @@
 @import "general/normalize.scss";
 @import "general/visually-hidden.scss";
 @import "general/fonts.scss";
+@import "general/mixins.scss";
+@import "general/variables.scss";
+@import "general/global.scss";
+// -------- END OF GENERAL -------- //
+// -------- START OF BLOCKS -------- //
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/site-nav.scss";
+@import "blocks/user-nav.scss";

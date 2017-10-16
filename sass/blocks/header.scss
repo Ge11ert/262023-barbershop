@@ -1,0 +1,11 @@
+.header {
+  max-width: 320px;
+  background-color: $bg-grey;
+
+  .header__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+  }
+}
