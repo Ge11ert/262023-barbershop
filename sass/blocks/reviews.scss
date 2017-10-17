@@ -1,0 +1,45 @@
+.reviews {
+  width: 320px;
+  overflow: hidden;
+  background-color: $beige;
+
+  .reviews__title {
+    @include title-font-mobile;
+  }
+
+  .reviews__send {
+    display: none;
+  }
+
+  .reviews__list {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .reviews__item {
+    @include content-padding;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    width: 280px;
+    margin: 0;
+  }
+
+  .reviews__container {
+    width: 210px;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  .reviews__text {
+    margin: 0;
+  }
+
+  .reviews__arrow {
+    display: none;
+  }
+}

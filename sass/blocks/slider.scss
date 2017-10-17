@@ -9,5 +9,17 @@
     border: 1px solid $white;
 
     transform: rotate(45deg);
+
+    &--dark {
+      border-color: #353535;
+    }
+
+    &--active {
+      background-color: $white;
+    }
+
+    &--active-dark {
+      background-color: #353535;
+    }
   }
 }

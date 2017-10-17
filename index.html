@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Barbershop Borodinski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
@@ -92,7 +93,7 @@
           </li>
         </ul>
         <div class="advantages__slider slider">
-          <button class="slider__button">1 слайд</button>
+          <button class="slider__button slider__button--active">1 слайд</button>
           <button class="slider__button">2 слайд</button>
           <button class="slider__button">3 слайд</button>
         </div>
@@ -119,7 +120,7 @@
             множества титулов и наград пополнил наши стройные ряды. Спешите записаться!
           </p>
         </article>
-        <a href="#" class="news__button link-button">Показать всё</a>
+        <a href="#" class="news__button link-button">Показать все</a>
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы о нас</h2>
@@ -129,37 +130,43 @@
             <picture class="reviews__author-name">
               <img src="img/avatar-mobile.jpg" width="50" height="51" alt="">
             </picture>
-            <cite class="reviews__author-name">Трэвис Баркер</cite>
-            <p class="reviews__text">
-              Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы
-              было видно новую татуировку!
-            </p>
+            <div class="reviews__container">
+              <cite class="reviews__author-name">Трэвис Баркер</cite>
+              <p class="reviews__text">
+                Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы
+                было видно новую татуировку!
+              </p>
+            </div>
           </blockquote>
           <blockquote class="reviews__item">
             <picture class="reviews__author-name">
               <img src="img/avatar-mobile.jpg" width="50" height="51" alt="">
             </picture>
-            <cite class="reviews__author-name">Джон Смит</cite>
-            <p class="reviews__text">
-              Отличную стрижку мне сделали ребята.
-            </p>
+            <div class="reviews__container">
+              <cite class="reviews__author-name">Джон Смит</cite>
+              <p class="reviews__text">
+                Отличную стрижку мне сделали ребята.
+              </p>
+            </div>
           </blockquote>
           <blockquote class="reviews__item">
             <picture class="reviews__author-name">
               <img src="img/avatar-mobile.jpg" width="50" height="51" alt="">
             </picture>
-            <cite class="reviews__author-name">Иван Бородайло</cite>
-            <p class="reviews__text">
-              В Бородинском ваша борода в надёжных руках!
-            </p>
+            <div class="reviews__container">
+              <cite class="reviews__author-name">Иван Бородайло</cite>
+              <p class="reviews__text">
+                В Бородинском ваша борода в надёжных руках!
+              </p>
+            </div>
           </blockquote>
           <button class="reviews__arrow reviews__arrow--prev" type="button">Предыдущий</button>
           <button class="reviews__arrow reviews__arrow--next" type="button">Следующий</button>
         </div>
         <div class="reviews__slider slider">
-          <button class="slider__button">1</button>
-          <button class="slider__button">2</button>
-          <button class="slider__button">3</button>
+          <button class="slider__button slider__button--dark slider__button--active-dark">1</button>
+          <button class="slider__button slider__button--dark">2</button>
+          <button class="slider__button slider__button--dark">3</button>
         </div>
       </section>
     </main>

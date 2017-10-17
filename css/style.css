@@ -498,15 +498,15 @@ a {
     padding-left: 20px;
     padding-right: 20px; }
   .stats .stats__slogan {
+    margin: 0;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     display: block;
     padding: 0 49px;
-    color: #000000;
-    text-align: center;
-    text-transform: uppercase; }
+    color: #000000; }
   .stats .stats__text {
     margin: 0;
     font-size: 20px;
@@ -546,10 +546,12 @@ a {
     padding: 0;
     list-style: none; }
   .advantages .advantages__title {
+    margin: 0;
     font-size: 30px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
     display: block;
     color: #f7f4f1;
     text-align: center; }
@@ -558,6 +560,90 @@ a {
     padding: 0 22px;
     color: #f7f4f1;
     text-align: center; }
+
+.news {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  background-color: #f8f5f2;
+  border-bottom: 1px solid #e5ddd5; }
+  .news .news__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .news .news__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .news .news__item:not(:last-of-type) {
+      border-bottom: 1px solid #e5ddd5; }
+  .news .news__date {
+    width: 50px;
+    font-size: 16px;
+    line-height: 1;
+    color: #ffffff;
+    background-color: #000000; }
+  .news .news__day {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .news .news__text {
+    width: 211px;
+    margin: 0; }
+
+.reviews {
+  width: 320px;
+  overflow: hidden;
+  background-color: #f8f5f2; }
+  .reviews .reviews__title {
+    margin: 0;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+  .reviews .reviews__send {
+    display: none; }
+  .reviews .reviews__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow-x: scroll; }
+  .reviews .reviews__item {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 280px;
+    margin: 0; }
+  .reviews .reviews__container {
+    width: 210px; }
+  .reviews .reviews__author-name {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: normal; }
+  .reviews .reviews__text {
+    margin: 0; }
+  .reviews .reviews__arrow {
+    display: none; }
 
 .slider .slider__button {
   width: 6px;
@@ -569,3 +655,23 @@ a {
   border: 1px solid #ffffff;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
+  .slider .slider__button--dark {
+    border-color: #353535; }
+  .slider .slider__button--active {
+    background-color: #ffffff; }
+  .slider .slider__button--active-dark {
+    background-color: #353535; }
+
+.link-button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #e5ddd5; }

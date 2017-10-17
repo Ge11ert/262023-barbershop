@@ -1,0 +1,37 @@
+.news {
+  @include content-padding;
+  width: 280px;
+  background-color: $beige;
+  border-bottom: 1px solid $stroke-color;
+
+  .news__title {
+    @include title-font-mobile;
+  }
+
+  .news__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &:not(:last-of-type) {
+      border-bottom: 1px solid $stroke-color;
+    }
+  }
+
+  .news__date {
+    width: 50px;
+    font-size: 16px;
+    line-height: 1;
+    color: $white;
+    background-color: $black;
+  }
+
+  .news__day {
+    @include title-font-mobile;
+  }
+
+  .news__text {
+    width: 211px;
+    margin: 0;
+  }
+}
