@@ -1,0 +1,20 @@
+.contacts {
+  @include content-padding;
+  color: $white;
+
+  .contacts__title {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .contacts__address {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contacts__phone {
+    color: $white;
+    border-color: $stroke-dark;
+  }
+}

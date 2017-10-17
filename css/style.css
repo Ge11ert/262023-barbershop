@@ -645,6 +645,55 @@ a {
   .reviews .reviews__arrow {
     display: none; }
 
+.footer {
+  width: 320px;
+  background-color: #242424; }
+
+.contacts {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff; }
+  .contacts .contacts__title {
+    display: block;
+    font-weight: bold;
+    text-align: center; }
+  .contacts .contacts__address {
+    margin: 0;
+    text-align: center; }
+  .contacts .contacts__phone {
+    color: #ffffff;
+    border-color: #3f3f3f; }
+
+.social .social__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #3f3f3f;
+  border-bottom: 1px solid #3f3f3f; }
+
+.social .social__item:nth-child(2) {
+  border-left: 1px solid #3f3f3f;
+  border-right: 1px solid #3f3f3f; }
+
+.social .social__link {
+  display: block;
+  width: 106px;
+  height: 106px;
+  font-size: 0;
+  line-height: 0; }
+
+.copyright {
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffffff;
+  text-align: center; }
+  .copyright .copyright__link {
+    color: #ffffff;
+    border-color: #3f3f3f; }
+
 .slider .slider__button {
   width: 6px;
   height: 6px;

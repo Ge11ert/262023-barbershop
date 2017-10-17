@@ -1,0 +1,10 @@
+.copyright {
+  @include content-padding;
+  color: $white;
+  text-align: center;
+
+  .copyright__link {
+    color: $white;
+    border-color: $stroke-dark;
+  }
+}
