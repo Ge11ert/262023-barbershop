@@ -1,0 +1,58 @@
+.stats {
+  width: 320px;
+
+  .stats__header {
+    @include content-padding;
+  }
+
+  .stats__slogan {
+    @include title-font-mobile;
+    display: block;
+    padding: 0 49px;
+    color: $black;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .stats__text {
+    margin: 0;
+    font-size: 20px;
+    color: $black;
+    text-align: center;
+  }
+
+  .stats__table {
+    color: $white;
+    background-color: #404040;
+    border-collapse: collapse;
+  }
+
+  .stats__row {
+    &:nth-child(2n+2) {
+      background-color: $light-grey;
+    }
+  }
+
+  .stats__value {
+    width: 50%;
+    padding: 19px 0 19px $padding-mobile;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+  }
+
+  .stats__field {
+    padding-right: $padding-mobile;
+    text-align: right;
+  }
+
+  .stats__notice {
+    @include content-padding;
+    margin: 0;
+    font-size: 20px;
+    color: rgba($white, 0.3);
+    text-align: center;
+    background-color: $bg-grey;
+  }
+}

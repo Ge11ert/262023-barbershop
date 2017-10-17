@@ -3,3 +3,15 @@
   padding: 0;
   list-style: none;
 }
+
+@mixin content-padding {
+  padding-left: $padding-mobile;
+  padding-right: $padding-mobile;
+}
+
+@mixin title-font-mobile {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}

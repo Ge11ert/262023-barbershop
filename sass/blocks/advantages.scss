@@ -1,0 +1,23 @@
+.advantages {
+  @include content-padding;
+  width: 280px;
+  background-color: $bg-grey;
+
+  .advantages__list {
+    @include list-reset;
+  }
+
+  .advantages__title {
+    @include title-font-mobile;
+    display: block;
+    color: #f7f4f1;
+    text-align: center;
+  }
+
+  .advantages__text {
+    margin: 0;
+    padding: 0 22px;
+    color: #f7f4f1;
+    text-align: center;
+  }
+}

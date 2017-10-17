@@ -1,0 +1,13 @@
+.slider {
+  .slider__button {
+    width: 6px;
+    height: 6px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    border: 1px solid $white;
+
+    transform: rotate(45deg);
+  }
+}

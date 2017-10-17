@@ -421,6 +421,9 @@ body {
   font-size: 18px;
   line-height: 27px; }
 
+a {
+  text-decoration: none; }
+
 .header {
   max-width: 320px;
   background-color: #242424; }
@@ -488,3 +491,81 @@ body {
     color: #ffffff;
     text-decoration: none;
     background-color: #6a4d38; }
+
+.stats {
+  width: 320px; }
+  .stats .stats__header {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .stats .stats__slogan {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 49px;
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase; }
+  .stats .stats__text {
+    margin: 0;
+    font-size: 20px;
+    color: #000000;
+    text-align: center; }
+  .stats .stats__table {
+    color: #ffffff;
+    background-color: #404040;
+    border-collapse: collapse; }
+  .stats .stats__row:nth-child(2n+2) {
+    background-color: #4e4e4e; }
+  .stats .stats__value {
+    width: 50%;
+    padding: 19px 0 19px 20px;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold; }
+  .stats .stats__field {
+    padding-right: 20px;
+    text-align: right; }
+  .stats .stats__notice {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+    background-color: #242424; }
+
+.advantages {
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+  background-color: #242424; }
+  .advantages .advantages__list {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .advantages .advantages__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    color: #f7f4f1;
+    text-align: center; }
+  .advantages .advantages__text {
+    margin: 0;
+    padding: 0 22px;
+    color: #f7f4f1;
+    text-align: center; }
+
+.slider .slider__button {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+  background: none;
+  border: 1px solid #ffffff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
