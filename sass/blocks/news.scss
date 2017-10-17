@@ -1,6 +1,8 @@
 .news {
   @include content-padding;
-  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: $beige;
   border-bottom: 1px solid $stroke-color;
 
@@ -12,6 +14,8 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    width: 280px;
+    margin: 0 auto;
 
     &:not(:last-of-type) {
       border-bottom: 1px solid $stroke-color;
@@ -33,5 +37,9 @@
   .news__text {
     width: 211px;
     margin: 0;
+  }
+
+  .news__button {
+    width: 280px;
   }
 }

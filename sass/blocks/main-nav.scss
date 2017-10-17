@@ -1,6 +1,8 @@
 .main-nav {
+  width: 320px;
   display: flex;
   align-items: flex-start;
+  margin: 0 auto;
 
   .main-nav__toggle {
     width: 70px;

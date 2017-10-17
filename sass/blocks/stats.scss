@@ -1,8 +1,13 @@
 .stats {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-grey;
 
   .stats__header {
     @include content-padding;
+    max-width: 280px;
+    background-color: $white;
   }
 
   .stats__slogan {
@@ -20,6 +25,8 @@
   }
 
   .stats__table {
+    width: 100%;
+    max-width: 320px;
     color: $white;
     background-color: #404040;
     border-collapse: collapse;
@@ -46,6 +53,8 @@
 
   .stats__notice {
     @include content-padding;
+    width: 100%;
+    box-sizing: border-box;
     margin: 0;
     font-size: 20px;
     color: rgba($white, 0.3);

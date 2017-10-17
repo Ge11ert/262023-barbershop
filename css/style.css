@@ -425,7 +425,6 @@ a {
   text-decoration: none; }
 
 .header {
-  max-width: 320px;
   background-color: #242424; }
   .header .header__logo {
     display: -webkit-box;
@@ -440,12 +439,14 @@ a {
     height: 85px; }
 
 .main-nav {
+  width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin: 0 auto; }
   .main-nav .main-nav__toggle {
     width: 70px;
     height: 50px;
@@ -493,10 +494,22 @@ a {
     background-color: #6a4d38; }
 
 .stats {
-  width: 320px; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #242424; }
   .stats .stats__header {
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    max-width: 280px;
+    background-color: #ffffff; }
   .stats .stats__slogan {
     margin: 0;
     font-size: 30px;
@@ -513,6 +526,8 @@ a {
     color: #000000;
     text-align: center; }
   .stats .stats__table {
+    width: 100%;
+    max-width: 320px;
     color: #ffffff;
     background-color: #404040;
     border-collapse: collapse; }
@@ -530,6 +545,9 @@ a {
   .stats .stats__notice {
     padding-left: 20px;
     padding-right: 20px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.3);
@@ -539,12 +557,13 @@ a {
 .advantages {
   padding-left: 20px;
   padding-right: 20px;
-  width: 280px;
   background-color: #242424; }
   .advantages .advantages__list {
     margin: 0;
     padding: 0;
-    list-style: none; }
+    list-style: none;
+    max-width: 320px;
+    margin: 0 auto; }
   .advantages .advantages__title {
     margin: 0;
     font-size: 30px;
@@ -564,7 +583,16 @@ a {
 .news {
   padding-left: 20px;
   padding-right: 20px;
-  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #f8f5f2;
   border-bottom: 1px solid #e5ddd5; }
   .news .news__title {
@@ -583,7 +611,9 @@ a {
             justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start; }
+            align-items: flex-start;
+    width: 280px;
+    margin: 0 auto; }
     .news .news__item:not(:last-of-type) {
       border-bottom: 1px solid #e5ddd5; }
   .news .news__date {
@@ -602,9 +632,10 @@ a {
   .news .news__text {
     width: 211px;
     margin: 0; }
+  .news .news__button {
+    width: 280px; }
 
 .reviews {
-  width: 320px;
   overflow: hidden;
   background-color: #f8f5f2; }
   .reviews .reviews__title {
@@ -620,7 +651,9 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    overflow-x: scroll; }
+    overflow-x: scroll;
+    max-width: 320px;
+    margin: 0 auto; }
   .reviews .reviews__item {
     padding-left: 20px;
     padding-right: 20px;
@@ -646,8 +679,23 @@ a {
     display: none; }
 
 .footer {
-  width: 320px;
-  background-color: #242424; }
+  background-color: #242424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer .footer__contacts {
+    width: 280px; }
+  .footer .footer__social {
+    width: 320px; }
+  .footer .footer__copyright {
+    width: 280px; }
 
 .contacts {
   padding-left: 20px;
@@ -671,8 +719,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border-top: 1px solid #3f3f3f;
-  border-bottom: 1px solid #3f3f3f; }
+  border-bottom: 1px solid #3f3f3f;
+  border-left: 1px solid #3f3f3f;
+  border-right: 1px solid #3f3f3f; }
 
 .social .social__item:nth-child(2) {
   border-left: 1px solid #3f3f3f;

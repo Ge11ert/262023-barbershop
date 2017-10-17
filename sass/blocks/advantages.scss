@@ -1,10 +1,11 @@
 .advantages {
   @include content-padding;
-  width: 280px;
   background-color: $bg-grey;
 
   .advantages__list {
     @include list-reset;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .advantages__title {

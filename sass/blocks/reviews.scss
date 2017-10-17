@@ -1,5 +1,4 @@
 .reviews {
-  width: 320px;
   overflow: hidden;
   background-color: $beige;
 
@@ -14,6 +13,8 @@
   .reviews__list {
     display: flex;
     overflow-x: scroll;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   .reviews__item {
