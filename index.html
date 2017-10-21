@@ -15,24 +15,24 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-nav">
-            <li class="site-nav__list">
+            <li class="site-nav__item main-nav__item main-nav__item--active">
               <a class="site-nav__link">Главная</a>
             </li>
-            <li class="site-nav__list">
+            <li class="site-nav__item main-nav__item">
               <a href="photo.html" class="site-nav__link">Наши работы</a>
             </li>
-            <li class="site-nav__list">
+            <li class="site-nav__item main-nav__item">
               <a href="form.html" class="site-nav__link">Записаться</a>
             </li>
-            <li class="site-nav__list">
+            <li class="site-nav__item main-nav__item">
               <a href="#" class="site-nav__link">Контакты</a>
             </li>
-            <li class="site-nav__list">
+            <li class="site-nav__item main-nav__item">
               <a href="#" class="site-nav__link">HTML Academy</a>
             </li>
           </ul>
           <ul class="main-nav__list user-nav">
-            <li class="user-nav__item">
+            <li class="user-nav__item main-nav__item">
               <a href="#" class="user-nav__link">Вход</a>
             </li>
           </ul>
@@ -49,8 +49,8 @@
         </div>
         <table class="stats__table">
           <tr class="stats__row">
-            <td class="stats__value">1500<sup>*</sup></td>
-            <td class="stats__field">рублей вложений</td>
+            <td class="stats__value">1 500<sup>*</sup></td>
+            <td class="stats__field">рублей<br> вложений</td>
           </tr>
           <tr class="stats__row">
             <td class="stats__value">7 200</td>
@@ -58,7 +58,7 @@
           </tr>
           <tr class="stats__row">
             <td class="stats__value">90 000</td>
-            <td class="stats__field">постриженных волос</td>
+            <td class="stats__field">постриженных<br> волос</td>
           </tr>
           <tr class="stats__row">
             <td class="stats__value">500 000<sup>*</sup></td>
@@ -70,21 +70,21 @@
       <section class="advantages">
         <h2 class="visually-hidden">Наши преимущества</h2>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--quick">
             <b class="advantages__title">Быстро</b>
             <p class="advantages__text">
-              Мы делаем свою работу быстро! Два&nbsp;часа пролетят незаметно и
-              Вы &ndash; счастливый обладатель стильной стрижки-минутки
+              Мы делаем свою работу быстро! Два&nbsp;часа пролетят незаметно
+              и&nbsp;Вы &ndash; счастливый обладатель стильной стрижки-минутки
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--cool">
             <b class="advantages__title">Круто</b>
             <p class="advantages__text">
               Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду
               футбола или кино. Во всяком случае внешне.
             </p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--expensive">
             <b class="advantages__title">Дорого</b>
             <p class="advantages__text">
               Наши мастера — профессионалы своего дела и не могут стоить дёшево.
@@ -196,5 +196,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link link-button">HTML Academy</a>
       </div>
     </footer>
+    <script src="js/menu.js" type="text/javascript"></script>
   </body>
 </html>

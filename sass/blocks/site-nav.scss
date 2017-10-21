@@ -1,6 +1,11 @@
 .site-nav {
   @include list-reset;
 
+  .site-nav__item {
+    background-color: $light-brown;
+    border-bottom: 1px solid #71543f;
+  }
+
   .site-nav__link {
     display: block;
     padding: 13px 21px;
@@ -10,7 +15,6 @@
     color: $white;
     text-transform: uppercase;
     text-decoration: none;
-
-    background-color: $light-brown;
+    box-shadow: inset 0px 1px 1px 0px rgba(136, 110, 91, 1);
   }
 }

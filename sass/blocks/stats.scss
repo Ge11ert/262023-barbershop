@@ -6,12 +6,15 @@
 
   .stats__header {
     @include content-padding;
+    padding-top: 28px;
+    padding-bottom: 26px;
     max-width: 280px;
     background-color: $white;
   }
 
   .stats__slogan {
     @include title-font-mobile;
+    margin-bottom: 15px;
     display: block;
     padding: 0 49px;
     color: $black;
@@ -22,6 +25,7 @@
     font-size: 20px;
     color: $black;
     text-align: center;
+    letter-spacing: 0.2px;
   }
 
   .stats__table {
@@ -40,14 +44,21 @@
 
   .stats__value {
     width: 50%;
-    padding: 19px 0 19px $padding-mobile;
+    padding: 20px 0 19px $padding-mobile;
     font-size: 40px;
     line-height: 1;
     font-weight: bold;
+
+    sup {
+      font-weight: normal;
+      top: -0.3em;
+      margin-left: 5px;
+    }
   }
 
   .stats__field {
-    padding-right: $padding-mobile;
+    padding: 17px 22px 19px 0;
+    line-height: 1;
     text-align: right;
   }
 
@@ -56,6 +67,8 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0;
+    padding-top: 16px;
+    padding-bottom: 10px;
     font-size: 20px;
     color: rgba($white, 0.3);
     text-align: center;
