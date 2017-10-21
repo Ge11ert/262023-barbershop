@@ -1,7 +1,11 @@
 .slider {
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+
   .slider__button {
-    width: 6px;
-    height: 6px;
+    width: 7px;
+    height: 7px;
     padding: 0;
     font-size: 0;
     line-height: 0;
