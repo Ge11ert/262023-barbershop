@@ -5,7 +5,7 @@
 @import "general/variables.scss";
 @import "general/global.scss";
 // -------- END OF GENERAL -------- //
-// -------- START OF BLOCKS -------- //
+// -------- INDEX.HTML BLOCKS -------- //
 @import "blocks/header.scss";
 @import "blocks/site-nav.scss";
 @import "blocks/user-nav.scss";
@@ -14,6 +14,9 @@
 @import "blocks/advantages.scss";
 @import "blocks/news.scss";
 @import "blocks/reviews.scss";
+// -------- FORM.HTML BLOCKS -------- //
+@import "blocks/appointment.scss";
+@import "blocks/form.scss";
 @import "blocks/footer.scss";
 @import "blocks/contacts.scss";
 // @import "blocks/social.scss";

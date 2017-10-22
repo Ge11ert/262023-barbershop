@@ -1,0 +1,13 @@
+.appointment {
+  @include content-padding;
+  background-color: $beige;
+
+  .appointment__title {
+    @include title-font-mobile;
+    padding: 30px 0 29px;
+  }
+
+  .appointment__to-main {
+    display: none;
+  }
+}

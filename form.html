@@ -12,28 +12,33 @@
       </a>
       <nav class="header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <ul class="main-nav__list site-nav">
-          <li class="site-nav__list">
-            <a href="index.html" class="site-nav__link">Главная</a>
-          </li>
-          <li class="site-nav__list">
-            <a href="photo.html" class="site-nav__link">Наши работы</a>
-          </li>
-          <li class="site-nav__list">
-            <a href="form.html" class="site-nav__link">Записаться</a>
-          </li>
-          <li class="site-nav__list">
-            <a href="#" class="site-nav__link">Контакты</a>
-          </li>
-          <li class="site-nav__list">
-            <a href="#" class="site-nav__link">HTML Academy</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-nav">
-          <li class="user-nav__item">
-            <a href="#" class="user-nav__link">Вход</a>
-          </li>
-        </ul>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-nav">
+            <li class="site-nav__item main-nav__item">
+              <a href="index.html" class="site-nav__link">Главная</a>
+            </li>
+            <li class="site-nav__item main-nav__item">
+              <a href="photo.html" class="site-nav__link">Наши работы</a>
+            </li>
+            <li class="site-nav__item main-nav__item main-nav__item--active">
+              <a href="form.html" class="site-nav__link">Записаться</a>
+            </li>
+            <li class="site-nav__item main-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
+            </li>
+            <li class="site-nav__item main-nav__item">
+              <a href="#" class="site-nav__link">HTML Academy</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-nav">
+            <li class="user-nav__item main-nav__item">
+              <a href="#" class="user-nav__link">
+                Вход
+                <svg class="user-nav__icon-login" width="16" height="16"><use xlink:href="img/sprite.svg#login"></use></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="content content--inner">
@@ -43,81 +48,101 @@
         <a class="appointment__to-main link-button" href="./index.html">На главную</a>
         <form action="#" class="appointment__form form" method="post">
           <div class="form__fields form__fields--person">
-            <p class="form__input-container">
-              <label for="name" class="visually-hidden">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Имя">
-            </p>
-            <p class="form__input-container">
+            <p class="form__input-container form__input-container--text">
               <label for="surname" class="visually-hidden">Фамилия</label>
-              <input type="text" id="surname" name="surname" placeholder="Фамилия">
+              <input class="form__input form__input--text" type="text" id="surname" name="surname" placeholder="Фамилия">
             </p>
-            <p class="form__input-container">
+            <p class="form__input-container form__input-container--text">
+              <label for="name" class="visually-hidden">Имя</label>
+              <input class="form__input form__input--text" type="text" id="name" name="name" placeholder="Имя">
+            </p>
+            <p class="form__input-container form__input-container--text">
               <label for="patronymic" class="visually-hidden">Отчество</label>
-              <input type="text" id="patronymic" name="patronymic" placeholder="Отчество">
+              <input class="form__input form__input--text" type="text" id="patronymic" name="patronymic" placeholder="Отчество">
             </p>
           </div>
           <div class="form__fields form__fields--contacts">
-            <p class="form__input-container">
+            <p class="form__input-container form__input-container--text">
               <label for="phone" class="visually-hidden"></label>
-              <input type="tel" id="phone" name="phone" placeholder="Контактный телефон">
+              <input class="form__input form__input--text" type="tel" id="phone" name="phone" placeholder="Контактный телефон">
             </p>
-            <p class="form__input-container">
+            <p class="form__input-container form__input-container--text">
               <label for="mail" class="visually-hidden"></label>
-              <input type="email" id="mail" name="mail" placeholder="Контактный e-mail">
+              <input class="form__input form__input--text" type="email" id="mail" name="mail" placeholder="Контактный e-mail">
             </p>
           </div>
-          <p class="form__input-container">
+          <p class="form__input-container form__input-container--additional">
             <label for="additional" class="visually-hidden">Укажите доп. информацию</label>
-            <textarea rows="8" cols="30" id="additional" placeholder="Доп. информация для мастера"></textarea>
+            <textarea class="form__input form__input--text" rows="3" cols="20" id="additional" placeholder="Доп. информация для мастера"></textarea>
           </p>
           <div class="form__fields form__fields--radio">
             <p class="form__field-title">Выберите модель бороды:</p>
             <p class="form__input-container form__input-container--radio">
-              <input type="radio" name="beard-model" value="admiral" id="admiral" checked>
-              <label for="admiral">адмирал</label>
+              <input type="radio" class="visually-hidden" name="beard-model" value="admiral" id="admiral" checked>
+              <span class="form__radio-indicator"></span>
+              <label for="admiral" class="form__radio">
+                адмирал
+                <svg class="form__icon-beard" width="52" height="50"><use xlink:href="img/sprite.svg#beard-1"></use></svg>
+              </label>
             </p>
             <p class="form__input-container form__input-container--radio">
-              <input type="radio" name="beard-model" value="axeman" id="axeman">
-              <label for="axeman">лесоруб</label>
+              <input type="radio" class="visually-hidden" name="beard-model" value="axeman" id="axeman">
+              <span class="form__radio-indicator"></span>
+              <label for="axeman" class="form__radio">
+                лесоруб
+                <svg class="form__icon-beard" width="58" height="69"><use xlink:href="img/sprite.svg#beard-2"></use></svg>
+              </label>
             </p>
             <p class="form__input-container form__input-container--radio">
-              <input type="radio" name="beard-model" value="polar" id="polar">
-              <label for="polar">полярник</label>
+              <input type="radio" class="visually-hidden" name="beard-model" value="polar" id="polar">
+              <span class="form__radio-indicator"></span>
+              <label for="polar" class="form__radio">
+                полярник
+                <svg class="form__icon-beard" width="63" height="79"><use xlink:href="img/sprite.svg#beard-3"></use></svg>
+              </label>
             </p>
             <p class="form__input-container form__input-container--radio">
-              <input type="radio" name="beard-model" value="boyar" id="boyar">
-              <label for="boyar">боярин</label>
+              <input type="radio" class="visually-hidden" name="beard-model" value="boyar" id="boyar">
+              <span class="form__radio-indicator"></span>
+              <label for="boyar" class="form__radio">
+                боярин
+                <svg class="form__icon-beard" width="57" height="98"><use xlink:href="img/sprite.svg#beard-4"></use></svg>
+              </label>
             </p>
             <p class="form__input-container form__input-container--radio">
-              <input type="radio" name="beard-model" value="wise" id="wise">
-              <label for="wise">мудрец</label>
+              <input type="radio" class="visually-hidden" name="beard-model" value="wise" id="wise">
+              <span class="form__radio-indicator"></span>
+              <label for="wise" class="form__radio">
+                мудрец
+                <svg class="form__icon-beard" width="45" height="105"><use xlink:href="img/sprite.svg#beard-5"></use></svg>
+              </label>
             </p>
           </div>
           <div class="form__fields form__fields--checkbox">
             <p class="form__field-title">Дополнительные услуги:</p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="paint-beard" name="paint-beard" checked>
-              <label for="paint-beard">Подкрасить бороду</label>
+              <input type="checkbox" class="visually-hidden" id="paint-beard" name="paint-beard" checked>
+              <label for="paint-beard" class="form__checkbox">Подкрасить бороду</label>
             </p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="comb-beard" name="comb-beard" checked>
-              <label for="comb-beard">Причесать бороду</label>
+              <input type="checkbox" class="visually-hidden" id="comb-beard" name="comb-beard" checked>
+              <label for="comb-beard" class="form__checkbox">Причесать бороду</label>
             </p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="remove-grizzle" name="remove-grizzle">
-              <label for="remove-grizzle">Убрать седину</label>
+              <input type="checkbox" class="visually-hidden" id="remove-grizzle" name="remove-grizzle">
+              <label for="remove-grizzle" class="form__checkbox">Убрать седину</label>
             </p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="mustache" name="mustache">
-              <label for="mustache">Накрутить усы</label>
+              <input type="checkbox" class="visually-hidden" id="mustache" name="mustache">
+              <label for="mustache" class="form__checkbox">Накрутить усы</label>
             </p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="temple" name="temple">
-              <label for="temple">Подровнять виски</label>
+              <input type="checkbox" class="visually-hidden" id="temple" name="temple">
+              <label for="temple" class="form__checkbox">Подровнять виски</label>
             </p>
             <p class="form__input-container form__input-container--checkbox">
-              <input type="checkbox" id="bald-polish" name="bald-polish">
-              <label for="bald-polish">Отпролировать лысину</label>
+              <input type="checkbox" class="visually-hidden" id="bald-polish" name="bald-polish">
+              <label for="bald-polish" class="form__checkbox">Отпролировать лысину</label>
             </p>
           </div>
           <input class="form__send" type="submit" value="Отправить заявку">
@@ -150,5 +175,6 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
       </div>
     </footer>
+    <script src="js/menu.js" type="text/javascript"></script>
   </body>
 </html>

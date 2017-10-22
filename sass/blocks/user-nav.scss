@@ -2,13 +2,23 @@
   @include list-reset;
 
   .user-nav__link {
+    position: relative;
     display: block;
     padding: 13px 21px;
+    padding-left: 50px;
 
     line-height: 24px;
     color: $white;
     text-decoration: none;
 
     background-color: $nav-brown;
+  }
+
+  .user-nav__icon-login {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgba($white, 0.3);
   }
 }
