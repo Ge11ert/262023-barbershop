@@ -1,9 +1,26 @@
 .reviews {
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 35px;
   overflow: hidden;
   background-color: $beige;
 
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/angle-bottom-dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .reviews__title {
     @include title-font-mobile;
+    margin-bottom: 27px;
   }
 
   .reviews__send {
@@ -12,7 +29,8 @@
 
   .reviews__list {
     display: flex;
-    overflow-x: scroll;
+    padding-bottom: 29px;
+    overflow: hidden;
     max-width: 320px;
     margin: 0 auto;
   }
@@ -30,7 +48,17 @@
     width: 210px;
   }
 
+  .reviews__author-photo {
+    align-self: flex-start;
+    margin-top: 7px;
+    width: 48px;
+    height: 51px;
+    border: 1px solid $stroke-color;
+  }
+
   .reviews__author-name {
+    display: block;
+    margin-bottom: 9px;
     font-size: 24px;
     font-weight: bold;
     font-style: normal;
@@ -38,6 +66,11 @@
 
   .reviews__text {
     margin: 0;
+  }
+
+  .reviews__slider {
+    margin: 0 auto;
+    margin-bottom: 19px;
   }
 
   .reviews__arrow {
