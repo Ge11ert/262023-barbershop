@@ -9,7 +9,7 @@
     }
 
     &--additional {
-      margin-bottom: 32px;
+      margin-bottom: 33px;
     }
 
     &--radio:not(:nth-child(3n+1)) {
@@ -29,21 +29,25 @@
     &--contacts {
       margin-bottom: 32px;
     }
-  }
 
-  .form__fields--radio {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 280px;
-    margin-bottom: 37px;
-    padding-left: 23px;
-    padding-right: 10px;
+    &--radio {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 280px;
+      margin-bottom: 37px;
+      padding-left: 23px;
+      padding-right: 10px;
+    }
+
+    &--checkbox {
+      margin-bottom: 46px;
+    }
   }
 
   .form__field-title {
     width: 100%;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 27px;
     text-align: center;
@@ -66,6 +70,10 @@
         color: $black;
         opacity: 1;
       }
+    }
+
+    &--additional {
+      resize: vertical;
     }
   }
 

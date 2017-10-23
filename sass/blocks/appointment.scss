@@ -1,6 +1,21 @@
 .appointment {
   @include content-padding;
+  position: relative;
+  padding-bottom: 35px;
   background-color: $beige;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/angle-bottom-dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   .appointment__title {
     @include title-font-mobile;

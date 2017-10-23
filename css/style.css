@@ -825,7 +825,20 @@ img {
 .appointment {
   padding-left: 20px;
   padding-right: 20px;
+  position: relative;
+  padding-bottom: 35px;
   background-color: #f8f5f2; }
+  .appointment::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    left: 0;
+    bottom: 0;
+    background-image: url("../img/angle-bottom-dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
   .appointment .appointment__title {
     margin: 0;
     font-size: 30px;
@@ -844,7 +857,7 @@ img {
     .form .form__input-container--text {
       margin-bottom: 6px; }
     .form .form__input-container--additional {
-      margin-bottom: 32px; }
+      margin-bottom: 33px; }
     .form .form__input-container--radio:not(:nth-child(3n+1)) {
       margin-right: 37px; }
     .form .form__input-container--radio:nth-child(3) {
@@ -863,10 +876,12 @@ img {
     margin-bottom: 37px;
     padding-left: 23px;
     padding-right: 10px; }
+  .form .form__fields--checkbox {
+    margin-bottom: 46px; }
   .form .form__field-title {
     width: 100%;
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 34px;
     font-size: 20px;
     line-height: 27px;
     text-align: center;
@@ -900,6 +915,8 @@ img {
       line-height: 30px;
       color: #000000;
       opacity: 1; }
+  .form .form__input--additional {
+    resize: vertical; }
   .form .form__radio {
     position: relative;
     display: block;
@@ -1048,4 +1065,5 @@ img {
   text-transform: uppercase;
   text-align: center;
   background: none;
-  border: 1px solid #e5ddd5; }
+  border: 1px solid #e5ddd5;
+  cursor: pointer; }
