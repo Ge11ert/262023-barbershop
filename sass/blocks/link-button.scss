@@ -5,10 +5,11 @@
   box-sizing: border-box;
   font-size: 18px;
   line-height: 24px;
+  font-family: inherit;
   font-weight: bold;
   color: $black;
   text-transform: uppercase;
   text-align: center;
-
+  background: none;
   border: 1px solid $stroke-color;
 }

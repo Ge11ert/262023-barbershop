@@ -1,4 +1,6 @@
 .form {
+  padding-bottom: 39px;
+
   .form__input-container {
     margin: 0;
 
@@ -32,6 +34,7 @@
   .form__fields--radio {
     display: flex;
     flex-wrap: wrap;
+    max-width: 280px;
     margin-bottom: 37px;
     padding-left: 23px;
     padding-right: 10px;
@@ -69,24 +72,46 @@
   .form__radio {
     position: relative;
     display: block;
-    padding-top: 7px;
+    min-width: 52px;
+    padding-top: 60px;
     padding-bottom: 122px;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      border: 1px solid $stroke-color;
+      border-radius: 50%;
+      background-color: $white;
+    }
   }
 
-  .form__radio-indicator {
-    display: block;
-    width: 50px;
-    height: 50px;
-    border: 1px solid $stroke-color;
-    border-radius: 50%;
-    background-color: $white;
+  input[type="radio"]:checked + .form__radio {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 17px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 16px;
+      border: 1px solid $stroke-color;
+      border-radius: 50%;
+      background-color: $white;
+    }
   }
 
   .form__icon-beard {
     position: absolute;
-    top: 46px;
+    top: 99px;
     left: 50%;
     transform: translateX(-50%);
+    fill: $light-brown;
   }
 
   .form__checkbox {
@@ -98,6 +123,7 @@
     padding-bottom: 3px;
     font-size: 18px;
     line-height: 30px;
+    cursor: pointer;
 
     &::after {
       content: "";
@@ -106,7 +132,22 @@
       top: 0;
       width: 34px;
       height: 34px;
+      background-color: $white;
       border: 1px solid $stroke-color;
     }
+  }
+
+  input[type="checkbox"]:checked + .form__checkbox {
+    &::after {
+      background-image: url("../img/checkbox-tick.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 22px 16px;
+    }
+  }
+
+  .form__send {
+    color: $white;
+    background-color: $light-brown;
   }
 }

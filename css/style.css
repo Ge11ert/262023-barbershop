@@ -837,110 +837,134 @@ img {
   .appointment .appointment__to-main {
     display: none; }
 
-.form .form__input-container {
-  margin: 0; }
-  .form .form__input-container--text {
-    margin-bottom: 6px; }
-  .form .form__input-container--additional {
+.form {
+  padding-bottom: 39px; }
+  .form .form__input-container {
+    margin: 0; }
+    .form .form__input-container--text {
+      margin-bottom: 6px; }
+    .form .form__input-container--additional {
+      margin-bottom: 32px; }
+    .form .form__input-container--radio:not(:nth-child(3n+1)) {
+      margin-right: 37px; }
+    .form .form__input-container--radio:nth-child(3) {
+      margin-right: 38px; }
+  .form .form__fields--person {
     margin-bottom: 32px; }
-  .form .form__input-container--radio:not(:nth-child(3n+1)) {
-    margin-right: 37px; }
-  .form .form__input-container--radio:nth-child(3) {
-    margin-right: 38px; }
-
-.form .form__fields--person {
-  margin-bottom: 32px; }
-
-.form .form__fields--contacts {
-  margin-bottom: 32px; }
-
-.form .form__fields--radio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 37px;
-  padding-left: 23px;
-  padding-right: 10px; }
-
-.form .form__field-title {
-  width: 100%;
-  margin: 0;
-  margin-bottom: 35px;
-  font-size: 20px;
-  line-height: 27px;
-  text-align: center;
-  text-transform: uppercase; }
-
-.form .form__input--text {
-  width: 100%;
-  padding: 9px 18px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: inherit;
-  font-size: 18px;
-  line-height: 30px;
-  border: 1px solid #e5ddd5; }
-  .form .form__input--text::-webkit-input-placeholder {
+  .form .form__fields--contacts {
+    margin-bottom: 32px; }
+  .form .form__fields--radio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 280px;
+    margin-bottom: 37px;
+    padding-left: 23px;
+    padding-right: 10px; }
+  .form .form__field-title {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 35px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase; }
+  .form .form__input--text {
+    width: 100%;
+    padding: 9px 18px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: inherit;
     font-size: 18px;
     line-height: 30px;
-    color: #000000;
-    opacity: 1; }
-  .form .form__input--text:-ms-input-placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    opacity: 1; }
-  .form .form__input--text::-ms-input-placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    opacity: 1; }
-  .form .form__input--text::placeholder {
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    opacity: 1; }
-
-.form .form__radio {
-  position: relative;
-  display: block;
-  padding-top: 7px;
-  padding-bottom: 122px; }
-
-.form .form__radio-indicator {
-  display: block;
-  width: 50px;
-  height: 50px;
-  border: 1px solid #e5ddd5;
-  border-radius: 50%;
-  background-color: #ffffff; }
-
-.form .form__icon-beard {
-  position: absolute;
-  top: 46px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%); }
-
-.form .form__checkbox {
-  position: relative;
-  display: block;
-  margin-bottom: 20px;
-  padding-left: 60px;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  font-size: 18px;
-  line-height: 30px; }
-  .form .form__checkbox::after {
+    border: 1px solid #e5ddd5; }
+    .form .form__input--text::-webkit-input-placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 1; }
+    .form .form__input--text:-ms-input-placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 1; }
+    .form .form__input--text::-ms-input-placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 1; }
+    .form .form__input--text::placeholder {
+      font-size: 18px;
+      line-height: 30px;
+      color: #000000;
+      opacity: 1; }
+  .form .form__radio {
+    position: relative;
+    display: block;
+    min-width: 52px;
+    padding-top: 60px;
+    padding-bottom: 122px;
+    cursor: pointer; }
+    .form .form__radio::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      width: 50px;
+      height: 50px;
+      border: 1px solid #e5ddd5;
+      border-radius: 50%;
+      background-color: #ffffff; }
+  .form input[type="radio"]:checked + .form__radio::after {
     content: "";
     position: absolute;
-    left: 0;
-    top: 0;
-    width: 34px;
-    height: 34px;
-    border: 1px solid #e5ddd5; }
+    top: 17px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border: 1px solid #e5ddd5;
+    border-radius: 50%;
+    background-color: #ffffff; }
+  .form .form__icon-beard {
+    position: absolute;
+    top: 99px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    fill: #826550; }
+  .form .form__checkbox {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 60px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    line-height: 30px;
+    cursor: pointer; }
+    .form .form__checkbox::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 34px;
+      height: 34px;
+      background-color: #ffffff;
+      border: 1px solid #e5ddd5; }
+  .form input[type="checkbox"]:checked + .form__checkbox::after {
+    background-image: url("../img/checkbox-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px 16px; }
+  .form .form__send {
+    color: #ffffff;
+    background-color: #826550; }
 
 .footer {
   background-color: #242424;
@@ -1018,8 +1042,10 @@ img {
           box-sizing: border-box;
   font-size: 18px;
   line-height: 24px;
+  font-family: inherit;
   font-weight: bold;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+  background: none;
   border: 1px solid #e5ddd5; }
