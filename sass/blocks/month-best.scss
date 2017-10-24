@@ -1,0 +1,39 @@
+.month-best {
+  .month-best__label {
+    position: relative;
+    display: inline-block;
+    padding: 12px 18px 11px 25px;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+
+    background-color: $light-brown;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: -8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 8px 0 0;
+      border-color: $light-brown transparent transparent transparent;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: -8px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 25px 0 0 8px;
+      border-color: transparent transparent transparent $light-brown;
+    }
+  }
+}

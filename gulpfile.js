@@ -31,6 +31,12 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+gulp.task("script", function() {
+  return gulp.src(["js/*.js","!js/app.js"])
+    .pipe(concat("app.js"))
+    .pipe(gulp.dest("js"));
+});
+
 gulp.task("webp", function () {
   return gulp.src("img/**/*.{jpg,png}")
     .pipe(webp({quality: 85}))
@@ -59,7 +65,7 @@ gulp.task("sprite", function() {
     .pipe(gulp.dest("img"));
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", ["style","script"], function() {
   server.init({
     server: ".",
     notify: false,
@@ -69,5 +75,6 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("js/*.js",["script"]);
   gulp.watch("*.html").on("change", server.reload);
 });

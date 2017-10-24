@@ -1,0 +1,25 @@
+.works {
+  @include content-padding;
+  width: 280px;
+
+  .works__title {
+    @include title-font-mobile;
+    padding-top: 30px;
+    padding-bottom: 29px;
+    letter-spacing: 0.3px;
+  }
+
+  .works__to-main {
+    display: none;
+  }
+
+  .works__image-container {
+    position: relative;
+  }
+
+  .works__best {
+    position: absolute;
+    left: 0;
+    bottom: 36px;
+  }
+}
