@@ -1,6 +1,12 @@
 .works {
   @include content-padding;
-  width: 280px;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 67px;
+
+  &::after {
+    @include delimiter($mid-grey);
+  }
 
   .works__title {
     @include title-font-mobile;
@@ -13,13 +19,108 @@
     display: none;
   }
 
+  .works__item {
+    margin-bottom: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
   .works__image-container {
     position: relative;
+    height: 176px;
+    background-color: #e6ded6;
+    text-align: center;
+
+    &--month-best {
+      height: 480px;
+    }
+  }
+
+  .works__desc {
+    padding-top: 23px;
+    padding-bottom: 13px;
+    padding-left: 22px;
+    padding-right: 25px;
+    border: 1px solid $stroke-color;
+    border-top: none;
+
+    &--month-best {
+      padding-top: 19px;
+      padding-bottom: 0;
+    }
+  }
+
+  .works__name {
+    margin: 0;
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 27px;
+    font-weight: bold;
+  }
+
+  .works__comment {
+    margin: 0;
+    margin-bottom: 16px;
+    letter-spacing: 0.15px;
+  }
+
+  .works__service-list {
+    @include list-reset;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .works__service-item {
+    margin-right: 37px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    &:nth-child(2n+2) {
+      // margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &--hair {
+      padding-left: 36px;
+      background-image: url("../img/scissors-icon.svg");
+      background-size: 23px 22px;
+    }
+
+    &--beard {
+      padding-left: 44px;
+      background-image: url("../img/beard-icon.svg");
+      background-size: 23px 21px;
+    }
+
+    &--mustache {
+      position: relative;
+      padding-left: 46px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: -12px;
+        width: 45px;
+        height: 12px;
+        background-image: url("../img/mustache-icon.svg");
+        background-size: 45px 12px;
+        background-position: center;
+      }
+    }
   }
 
   .works__best {
     position: absolute;
     left: 0;
-    bottom: 36px;
+    bottom: 29px;
   }
 }

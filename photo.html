@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Barbershop Borodinski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -47,17 +48,20 @@
         <h2 class="works__title">Наши работы</h2>
         <a class="works__to-main link-button" href="./index.html">На главную</a>
         <article class="works__item works__item--month-best">
-          <div class="works__image-container">
+          <div class="works__image-container works__image-container--month-best">
             <div class="works__best month-best">
               <span class="month-best__label">Работа месяца</span>
             </div>
-            <img class="works__image" src="./img/photo-1-mobile.jpg" width="280" height="480" alt="">
+            <picture>
+              <source type="image/webp" srcset="./img/photo-1-mobile.webp">
+              <img class="works__image" src="./img/photo-1-mobile.jpg" width="280" height="480" alt="">
+            </picture>
           </div>
-          <div class="works__desc">
+          <div class="works__desc works__desc--month-best">
             <h2 class="works__name">Лжепётр Мчиславский</h2>
             <blockquote class="works__comment">
               Где я только ни стригся, но так как делаете это
-              вы — не умеет никто другой! Еще раз спасибо и до скорого!
+              вы &ndash; не умеет никто другой! Еще раз спасибо и до скорого!
             </blockquote>
             <ul class="works__service-list">
               <li class="works__service-item works__service-item--hair">Стрижка</li>
@@ -102,7 +106,7 @@
           <div class="works__desc">
             <h2 class="works__name">Винстон Синий</h2>
             <blockquote class="works__comment">
-              Как только зарастаю, и волосы начинают мешать видеть — бегом в Бородинский!
+              Как только зарастаю, и волосы начинают мешать видеть &ndash; бегом в Бородинский!
             </blockquote>
             <ul class="works__service-list">
               <li class="works__service-item works__service-item--hair">Стрижка</li>
@@ -116,31 +120,46 @@
           <caption class="price__title">Прейскурант</caption>
           <tr>
             <td class="price__index">1</td>
-            <td class="price__service">Классическая стрижка</td>
+            <td class="price__service">
+              Классическая стрижка
+              <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+            </td>
             <td class="price__washing">с мытьём головы</td>
             <td class="price__value">1 500 руб.</td>
           </tr>
           <tr>
             <td class="price__index">2</td>
-            <td class="price__service">Современный вариант</td>
+            <td class="price__service">
+              Современный вариант
+              <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+            </td>
             <td class="price__washing">с мытьём головы</td>
             <td class="price__value">1 500 руб.</td>
           </tr>
           <tr>
             <td class="price__index">3</td>
-            <td class="price__service">Индивидуальный подход</td>
+            <td class="price__service">
+              Индивидуальный подход
+              <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+            </td>
             <td class="price__washing">с мытьём головы</td>
             <td class="price__value">2 000 руб.</td>
           </tr>
           <tr>
             <td class="price__index">4</td>
-            <td class="price__service">Бритьё бороды</td>
+            <td class="price__service">
+              Бритьё бороды
+              <span class="price__washing price__washing--mobile">(без мытья)</span>
+            </td>
             <td class="price__washing">без мытья</td>
             <td class="price__value">500 руб.</td>
           </tr>
           <tr>
             <td class="price__index">5</td>
-            <td class="price__service">Бритьё головы</td>
+            <td class="price__service">
+              Бритьё головы
+              <span class="price__washing price__washing--mobile">(с мытьём головы)</span>
+            </td>
             <td class="price__washing">с мытьём головы</td>
             <td class="price__value">1 000 руб.</td>
           </tr>

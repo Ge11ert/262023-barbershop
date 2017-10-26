@@ -1,0 +1,43 @@
+.price {
+  @include content-padding;
+  padding-top: 36px;
+  padding-bottom: 20px;
+  background-color: $mid-grey;
+
+  .price__title {
+    @include title-font-mobile;
+    margin-bottom: 20px;
+    color: $white;
+  }
+
+  .price__table {
+    width: 100%;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    font-size: 20px;
+    color: $white;
+  }
+
+  .price__index {
+    display: none;
+  }
+
+  .price__service {
+    font-weight: bold;
+    padding-bottom: 14px;
+  }
+
+  .price__washing {
+    display: none;
+
+    &--mobile {
+      display: block;
+      font-weight: normal;
+    }
+  }
+
+  .price__value {
+    text-align: right;
+    vertical-align: top;
+  }
+}

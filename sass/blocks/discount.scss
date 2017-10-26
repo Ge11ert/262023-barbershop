@@ -1,0 +1,18 @@
+.discount {
+  border: 1px solid rgba($white, 0.1);
+
+  .discount__text {
+    width: 125px;
+    margin: 0;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    padding-left: 113px;
+    font-size: 20px;
+    color: $white;
+
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    background-size: 58px 57px;
+  }
+}
