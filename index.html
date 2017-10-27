@@ -8,8 +8,11 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
-        <img src="img/logotype-mobile.svg" alt="Borodinski" width="226" height="30">
+      <a class="header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img class="header__logo-image" src="img/logotype-mobile.svg" alt="Borodinski" width="226" height="30">
+        </picture>
       </a>
       <nav class="header__nav main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>

@@ -6,6 +6,8 @@
 
   .stats__header {
     @include content-padding;
+    width: 100%;
+    box-sizing: border-box;
     padding-top: 28px;
     padding-bottom: 26px;
     background-color: $white;

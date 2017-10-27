@@ -1,5 +1,4 @@
 .main-nav {
-  // width: 320px;
   display: flex;
   align-items: flex-start;
   margin: 0 auto;
@@ -59,13 +58,37 @@
   }
 }
 
-.main-nav__wrapper--closed .main-nav__item {
-  display: none;
+@media (max-width: $mobile-width-only) {
+  .main-nav__wrapper--closed .main-nav__item {
+    display: none;
 
-  &--active {
-    display: block;
-    text-align: right;
-    padding-right: 38px;
-    border-bottom: none;
+    &--active {
+      display: block;
+      text-align: right;
+      padding-right: 38px;
+      border-bottom: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    margin: 0;
+
+    .main-nav__wrapper {
+      display: flex;
+      justify-content: center;
+      width: 640px;
+      min-height: 0;
+      background-color: $black;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .main-nav__toggle {
+      display: none;
+    }
   }
 }

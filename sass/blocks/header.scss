@@ -9,3 +9,27 @@
     height: 85px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .header {
+    display: flex;
+    flex-direction: column;
+
+    .header__logo {
+      order: 2;
+      align-items: flex-start;
+      height: 400px;
+
+      background-color: $black;
+      background-image: url("../img/back-tablet.jpg");
+      background-repeat: no-repeat;
+      background-position: center bottom;
+    }
+
+    .header__logo-image {
+      width: 370px;
+      height: 101px;
+      margin-top: 40px;
+    }
+  }
+}
