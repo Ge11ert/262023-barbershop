@@ -3,7 +3,7 @@
 
   .discount__text {
     width: 125px;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 18px;
     padding-bottom: 17px;
     padding-left: 113px;
@@ -12,7 +12,7 @@
 
     background-image: url("../img/clock.svg");
     background-repeat: no-repeat;
-    background-position: 20px center;
+    background-position: 0 center;
     background-size: 58px 57px;
   }
 }
