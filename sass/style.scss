@@ -5,6 +5,7 @@
 @import "general/variables.scss";
 @import "general/global.scss";
 // -------- END OF GENERAL -------- //
+// ------------------------------------ //
 // -------- INDEX.HTML BLOCKS -------- //
 @import "blocks/header.scss";
 @import "blocks/site-nav.scss";
@@ -24,7 +25,8 @@
 @import "blocks/price.scss";
 @import "blocks/month-best.scss";
 @import "blocks/discount.scss";
-// @import "blocks/social.scss";
+// -------- OTHER BLOCKS -------- //
+@import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/slider.scss";
 @import "blocks/link-button.scss";

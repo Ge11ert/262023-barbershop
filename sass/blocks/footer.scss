@@ -1,15 +1,17 @@
 .footer {
-  background-color: $bg-grey;
+  background-color: $dark-grey;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 32px;
 
   .footer__contacts {
     width: 280px;
   }
 
   .footer__social {
-    width: 320px;
+    // width: 320px;
+    width: 100%;
   }
 
   .footer__copyright {

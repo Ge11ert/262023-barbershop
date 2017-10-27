@@ -1,8 +1,13 @@
 .price {
   @include content-padding;
+  position: relative;
   padding-top: 36px;
-  padding-bottom: 20px;
+  padding-bottom: 54px;
   background-color: $mid-grey;
+
+  &::after {
+    @include delimiter($dark-grey);
+  }
 
   .price__title {
     @include title-font-mobile;

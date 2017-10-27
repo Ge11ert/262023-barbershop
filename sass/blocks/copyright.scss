@@ -1,9 +1,12 @@
 .copyright {
   @include content-padding;
+  padding-top: 28px;
+  padding-bottom: 24px;
   color: $white;
   text-align: center;
 
   .copyright__link {
+    margin-top: 12px;
     color: $white;
     border-color: $stroke-dark;
   }

@@ -1,15 +1,18 @@
 .contacts {
   @include content-padding;
+  padding-bottom: 26px;
   color: $white;
 
   .contacts__title {
     display: block;
+    margin-bottom: 10px;
     font-weight: bold;
     text-align: center;
   }
 
   .contacts__address {
     margin: 0;
+    margin-bottom: 18px;
     text-align: center;
   }
 
