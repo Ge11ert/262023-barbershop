@@ -159,10 +159,12 @@
       tbody {
         display: flex;
         flex-wrap: wrap;
+        width: 640px;
       }
     }
 
     .stats__row {
+      display: block;
       width: 250px;
       padding: 25px 34px;
       padding-right: 36px;

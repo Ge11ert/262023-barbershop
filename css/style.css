@@ -763,8 +763,10 @@ img {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; }
+            flex-wrap: wrap;
+        width: 640px; }
     .stats .stats__row {
+      display: block;
       width: 250px;
       padding: 25px 34px;
       padding-right: 36px;
@@ -800,6 +802,9 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 25px;
   padding-bottom: 48px;
   background-color: #242424; }
@@ -824,8 +829,7 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
-    max-width: 320px;
-    margin: 0 auto; }
+    max-width: 320px; }
   .advantages .advantages__item {
     padding-top: 130px;
     display: none; }
@@ -864,9 +868,6 @@ img {
     color: #f7f4f1;
     font-size: 20px;
     text-align: center; }
-  .advantages .advantages__slider {
-    -ms-flex-item-align: center;
-        align-self: center; }
 
 @media (min-width: 768px) {
   .advantages {
@@ -947,9 +948,10 @@ img {
     width: 280px;
     margin: 0 auto;
     padding-top: 16px;
-    padding-bottom: 18px; }
-    .news .news__item:not(:last-of-type) {
-      border-bottom: 1px solid #e5ddd5; }
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e5ddd5; }
+    .news .news__item:last-of-type {
+      border-bottom: none; }
   .news .news__date {
     position: relative;
     top: 12px;
@@ -984,6 +986,33 @@ img {
   .news .news__button {
     width: 280px;
     margin-top: 6px; }
+
+@media (min-width: 768px) {
+  .news {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 46px; }
+    .news .news__title {
+      -webkit-box-ordinal-group: -1;
+          -ms-flex-order: -2;
+              order: -2;
+      font-size: 40px;
+      line-height: 40px; }
+    .news .news__item {
+      width: 320px;
+      border-bottom: none; }
+    .news .news__button {
+      -webkit-box-ordinal-group: 0;
+          -ms-flex-order: -1;
+              order: -1;
+      width: 160px; } }
 
 .reviews {
   position: relative;
