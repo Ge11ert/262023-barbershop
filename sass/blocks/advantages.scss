@@ -19,15 +19,31 @@
 
   .advantages__item {
     padding-top: 130px;
+    display: none;
 
     &--quick {
       background-image: url("../img/slider-scissors.svg");
       background-repeat: no-repeat;
       background-position: center top 5px;
+      background-size: 95px 94px;
     }
 
-    &:not(:first-child) {
-      display: none;
+    &--cool {
+      background-image: url("../img/slider-chair.svg");
+      background-repeat: no-repeat;
+      background-position: center top 5px;
+      background-size: 95px 88px;
+    }
+
+    &--expensive {
+      background-image: url("../img/slider-stamp.svg");
+      background-repeat: no-repeat;
+      background-position: center top 5px;
+      background-size: 95px 91px;
+    }
+
+    &:first-child {
+      display: block;
     }
   }
 
@@ -50,5 +66,65 @@
 
   .advantages__slider {
     align-self: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    padding-top: 2px;
+    padding-bottom: 22px;
+    background: none;
+
+    &::after {
+      height: 40px;
+      bottom: -1px;
+    }
+
+    .advantages__list {
+      max-width: 640px;
+      padding-left: 36px;
+      padding-right: 36px;
+    }
+
+    .advantages__item {
+      display: block;
+      padding-top: 35px;
+      padding-left: 124px;
+      padding-bottom: 37px;
+      border-bottom: 1px solid $stroke-dark;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      &--quick {
+        background-position: left top 44px;
+      }
+
+      &--cool {
+        background-position: left top 46px;
+      }
+
+      &--expensive {
+        background-position: left top 43px;
+      }
+    }
+
+    .advantages__title {
+      margin-bottom: 7px;
+      text-align: left;
+      line-height: 42px;
+    }
+
+    .advantages__text {
+      margin: 0;
+      padding: 0;
+
+      text-align: left;
+    }
+
+    .advantages__slider {
+      display: none;
+    }
   }
 }

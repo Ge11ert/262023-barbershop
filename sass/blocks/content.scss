@@ -3,3 +3,9 @@
     background-color: $beige;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .content {
+    background-color: $mid-grey;
+  }
+}

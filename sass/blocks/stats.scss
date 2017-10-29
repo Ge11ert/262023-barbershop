@@ -44,6 +44,14 @@
     &:nth-child(2n+2) {
       background-color: $light-grey;
     }
+
+    &:nth-child(3) {
+      background-color: $mid-grey;
+    }
+
+    &:nth-child(4) {
+      background-color: #404040;
+    }
   }
 
   .stats__value {
@@ -91,10 +99,23 @@
     margin-top: -184px;
 
     .stats__header {
+      position: relative;
       display: flex;
       flex-wrap: wrap;
       padding: 30px 40px 28px;
       z-index: 2;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 42px;
+        left: -21px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 21px 21px 0;
+        border-color: transparent #ffffff transparent transparent;
+      }
     }
 
     .stats__slogan {
@@ -144,14 +165,12 @@
     .stats__row {
       width: 250px;
       padding: 25px 34px;
+      padding-right: 36px;
       padding-bottom: 28px;
 
-      &:nth-child(3) {
-        background-color: $mid-grey;
-      }
-
-      &:nth-child(4) {
-        background-color: #404040;
+      &:nth-child(2) {
+        padding-left: 31px;
+        padding-right: 39px;
       }
     }
 

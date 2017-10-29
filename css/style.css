@@ -635,6 +635,10 @@ img {
     padding-top: 28px;
     padding-bottom: 26px;
     background-color: #ffffff; }
+    @media (min-width: 768px) {
+      .stats .stats__header {
+        padding-left: 64px;
+        padding-right: 64px; } }
   .stats .stats__slogan {
     margin: 0;
     font-size: 30px;
@@ -663,6 +667,10 @@ img {
     border-collapse: collapse; }
   .stats .stats__row:nth-child(2n+2) {
     background-color: #4e4e4e; }
+  .stats .stats__row:nth-child(3) {
+    background-color: #353535; }
+  .stats .stats__row:nth-child(4) {
+    background-color: #404040; }
   .stats .stats__value {
     width: 50%;
     padding: 20px 0 19px 20px;
@@ -690,6 +698,10 @@ img {
     color: rgba(255, 255, 255, 0.3);
     text-align: center;
     background-color: #242424; }
+    @media (min-width: 768px) {
+      .stats .stats__notice {
+        padding-left: 64px;
+        padding-right: 64px; } }
     .stats .stats__notice--top {
       display: none; }
 
@@ -699,6 +711,7 @@ img {
     margin: 0 auto;
     margin-top: -184px; }
     .stats .stats__header {
+      position: relative;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -706,6 +719,16 @@ img {
           flex-wrap: wrap;
       padding: 30px 40px 28px;
       z-index: 2; }
+      .stats .stats__header::after {
+        content: "";
+        position: absolute;
+        top: 42px;
+        left: -21px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 21px 21px 0;
+        border-color: transparent #ffffff transparent transparent; }
     .stats .stats__slogan {
       max-width: none;
       width: 280px;
@@ -744,11 +767,11 @@ img {
     .stats .stats__row {
       width: 250px;
       padding: 25px 34px;
+      padding-right: 36px;
       padding-bottom: 28px; }
-      .stats .stats__row:nth-child(3) {
-        background-color: #353535; }
-      .stats .stats__row:nth-child(4) {
-        background-color: #404040; }
+      .stats .stats__row:nth-child(2) {
+        padding-left: 31px;
+        padding-right: 39px; }
     .stats .stats__value {
       display: block;
       width: auto;
@@ -780,6 +803,10 @@ img {
   padding-top: 25px;
   padding-bottom: 48px;
   background-color: #242424; }
+  @media (min-width: 768px) {
+    .advantages {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .advantages::after {
     content: "";
     position: absolute;
@@ -800,13 +827,25 @@ img {
     max-width: 320px;
     margin: 0 auto; }
   .advantages .advantages__item {
-    padding-top: 130px; }
+    padding-top: 130px;
+    display: none; }
     .advantages .advantages__item--quick {
       background-image: url("../img/slider-scissors.svg");
       background-repeat: no-repeat;
-      background-position: center top 5px; }
-    .advantages .advantages__item:not(:first-child) {
-      display: none; }
+      background-position: center top 5px;
+      background-size: 95px 94px; }
+    .advantages .advantages__item--cool {
+      background-image: url("../img/slider-chair.svg");
+      background-repeat: no-repeat;
+      background-position: center top 5px;
+      background-size: 95px 88px; }
+    .advantages .advantages__item--expensive {
+      background-image: url("../img/slider-stamp.svg");
+      background-repeat: no-repeat;
+      background-position: center top 5px;
+      background-size: 95px 91px; }
+    .advantages .advantages__item:first-child {
+      display: block; }
   .advantages .advantages__title {
     margin: 0;
     font-size: 30px;
@@ -829,6 +868,43 @@ img {
     -ms-flex-item-align: center;
         align-self: center; }
 
+@media (min-width: 768px) {
+  .advantages {
+    padding-top: 2px;
+    padding-bottom: 22px;
+    background: none; }
+    .advantages::after {
+      height: 40px;
+      bottom: -1px; }
+    .advantages .advantages__list {
+      max-width: 640px;
+      padding-left: 36px;
+      padding-right: 36px; }
+    .advantages .advantages__item {
+      display: block;
+      padding-top: 35px;
+      padding-left: 124px;
+      padding-bottom: 37px;
+      border-bottom: 1px solid #3f3f3f; }
+      .advantages .advantages__item:last-child {
+        border-bottom: none; }
+      .advantages .advantages__item--quick {
+        background-position: left top 44px; }
+      .advantages .advantages__item--cool {
+        background-position: left top 46px; }
+      .advantages .advantages__item--expensive {
+        background-position: left top 43px; }
+    .advantages .advantages__title {
+      margin-bottom: 7px;
+      text-align: left;
+      line-height: 42px; }
+    .advantages .advantages__text {
+      margin: 0;
+      padding: 0;
+      text-align: left; }
+    .advantages .advantages__slider {
+      display: none; } }
+
 .news {
   padding-left: 20px;
   padding-right: 20px;
@@ -846,6 +922,10 @@ img {
   padding-bottom: 28px;
   background-color: #f8f5f2;
   border-bottom: 1px solid #e5ddd5; }
+  @media (min-width: 768px) {
+    .news {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .news .news__title {
     margin: 0;
     font-size: 30px;
@@ -955,6 +1035,10 @@ img {
             justify-content: space-between;
     width: 280px;
     margin: 0; }
+    @media (min-width: 768px) {
+      .reviews .reviews__item {
+        padding-left: 64px;
+        padding-right: 64px; } }
   .reviews .reviews__container {
     width: 210px; }
   .reviews .reviews__author-photo {
@@ -983,6 +1067,10 @@ img {
   padding-right: 20px;
   position: relative;
   padding-bottom: 35px; }
+  @media (min-width: 768px) {
+    .appointment {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .appointment::after {
     content: "";
     position: absolute;
@@ -1165,6 +1253,10 @@ img {
   padding-right: 20px;
   padding-bottom: 26px;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .contacts {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .contacts .contacts__title {
     display: block;
     margin-bottom: 10px;
@@ -1184,6 +1276,10 @@ img {
   position: relative;
   margin: 0 auto;
   padding-bottom: 67px; }
+  @media (min-width: 768px) {
+    .works {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .works::after {
     content: "";
     position: absolute;
@@ -1291,6 +1387,10 @@ img {
   padding-top: 36px;
   padding-bottom: 54px;
   background-color: #353535; }
+  @media (min-width: 768px) {
+    .price {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .price::after {
     content: "";
     position: absolute;
@@ -1422,6 +1522,10 @@ img {
   padding-bottom: 24px;
   color: #ffffff;
   text-align: center; }
+  @media (min-width: 768px) {
+    .copyright {
+      padding-left: 64px;
+      padding-right: 64px; } }
   .copyright .copyright__link {
     margin-top: 12px;
     color: #ffffff;
@@ -1471,3 +1575,7 @@ img {
 
 .content--inner {
   background-color: #f8f5f2; }
+
+@media (min-width: 768px) {
+  .content {
+    background-color: #353535; } }
