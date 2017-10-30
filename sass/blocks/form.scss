@@ -12,7 +12,7 @@
       margin-bottom: 33px;
     }
 
-    &--radio:not(:nth-child(3n+1)) {
+    &--radio {
       margin-right: 37px;
     }
 
@@ -157,5 +157,132 @@
   .form__send {
     color: $white;
     background-color: $light-brown;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    padding-top: 67px;
+
+    .form__fields {
+      &--person {
+        display: flex;
+        margin-bottom: 35px;
+      }
+
+      &--contacts {
+        margin-bottom: 35px;
+      }
+
+      &--radio {
+        max-width: none;
+        margin-bottom: 53px;
+        padding: 0 13px;
+        padding-top: 14px;
+        justify-content: center;
+      }
+
+      &--checkbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 11px;
+      }
+    }
+
+    .form__field-title {
+      margin-bottom: 45px;
+      font-size: 30px;
+      line-height: 30px;
+
+      &--checkbox {
+        margin-bottom: 69px;
+      }
+    }
+
+    .form__input-container {
+      &--text {
+        width: 214px;
+        margin-bottom: 0;
+        flex-grow: 1;
+
+        &:nth-of-type(1) {
+          margin-left: -1px;
+          margin-right: -1px;
+        }
+
+        &:nth-of-type(2) {
+          order: -1;
+        }
+      }
+
+      &--tel {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+
+      &--email {
+        width: 100%;
+      }
+
+      &--radio {
+        margin-right: 65px;
+
+        &:nth-child(3) {
+          margin-right: 60px;
+        }
+
+        &:nth-child(5) {
+          margin-right: 74px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      &--checkbox {
+        width: 320px;
+      }
+    }
+
+    .form__input {
+      &--text {
+        font-size: 24px;
+        padding: 19px 24px;
+
+        &::placeholder {
+          font-size: 24px;
+        }
+      }
+
+      &--additional {
+        height: 211px;
+      }
+    }
+
+    .form__radio {
+      padding-top: 79px;
+      padding-bottom: 140px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .form__checkbox {
+      margin-bottom: 47px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    .form__icon-beard {
+      top: 135px;
+    }
+
+    .form__send {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 }

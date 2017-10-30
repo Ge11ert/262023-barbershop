@@ -7,5 +7,9 @@
 @media (min-width: $tablet-width) {
   .content {
     background-color: $mid-grey;
+
+    &--inner {
+      background-color: $beige;
+    }
   }
 }

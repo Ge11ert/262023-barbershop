@@ -24,6 +24,18 @@
       background-image: url("../img/back-tablet.jpg");
       background-repeat: no-repeat;
       background-position: center bottom;
+
+      &--inner {
+        position: relative;
+        height: 214px;
+        background-position: center;
+        background-size: cover;
+
+        &::after {
+          @include delimiter($beige);
+          height: 41px;
+        }
+      }
     }
 
     .header__logo-image {

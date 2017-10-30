@@ -8,7 +8,7 @@
   </head>
   <body>
     <header class="header">
-      <a class="header__logo" href="index.html">
+      <a class="header__logo header__logo--inner" href="index.html">
         <picture>
           <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
           <img class="header__logo-image" src="img/logotype-mobile.svg" alt="Borodinski" width="226" height="30">
@@ -66,11 +66,11 @@
             </p>
           </div>
           <div class="form__fields form__fields--contacts">
-            <p class="form__input-container form__input-container--text">
+            <p class="form__input-container form__input-container--text form__input-container--tel">
               <label for="phone" class="visually-hidden"></label>
               <input class="form__input form__input--text" type="tel" id="phone" name="phone" placeholder="Контактный телефон">
             </p>
-            <p class="form__input-container form__input-container--text">
+            <p class="form__input-container form__input-container--text form__input-container--email">
               <label for="mail" class="visually-hidden"></label>
               <input class="form__input form__input--text" type="email" id="mail" name="mail" placeholder="Контактный e-mail">
             </p>
@@ -118,7 +118,7 @@
             </p>
           </div>
           <div class="form__fields form__fields--checkbox">
-            <p class="form__field-title">Дополнительные услуги:</p>
+            <p class="form__field-title form__field-title--checkbox">Дополнительные услуги:</p>
             <p class="form__input-container form__input-container--checkbox">
               <input type="checkbox" class="visually-hidden" id="paint-beard" name="paint-beard" checked>
               <label for="paint-beard" class="form__checkbox">Подкрасить бороду</label>
@@ -141,7 +141,7 @@
             </p>
             <p class="form__input-container form__input-container--checkbox">
               <input type="checkbox" class="visually-hidden" id="bald-polish" name="bald-polish">
-              <label for="bald-polish" class="form__checkbox">Отпролировать лысину</label>
+              <label for="bald-polish" class="form__checkbox">Отполировать лысину</label>
             </p>
           </div>
           <input class="form__send link-button" type="submit" value="Отправить заявку">

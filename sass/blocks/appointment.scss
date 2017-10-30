@@ -16,3 +16,28 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .appointment {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 54px;
+
+    &::after {
+      display: none;
+    }
+
+    .appointment__title {
+      @include title-font-tablet;
+      margin-top: 3px;
+      margin-right: 160px;
+      padding: 0;
+    }
+
+    .appointment__to-main {
+      display: block;
+      width: 160px;
+    }
+  }
+}
