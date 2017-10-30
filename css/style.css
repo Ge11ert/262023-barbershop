@@ -820,8 +820,8 @@ img {
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #f8f5f2), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, #f8f5f2), color-stop(50%, transparent));
-    background-image: linear-gradient(to top right, #f8f5f2 50%, transparent 50%), linear-gradient(to top left, #f8f5f2 50%, transparent 50%);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #f8f5f2), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(49%, #f8f5f2), color-stop(50%, transparent));
+    background-image: linear-gradient(to top right, #f8f5f2 49%, transparent 50%), linear-gradient(to top left, #f8f5f2 49%, transparent 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%; }
@@ -876,7 +876,7 @@ img {
     background: none; }
     .advantages::after {
       height: 40px;
-      bottom: -1px; }
+      bottom: 0; }
     .advantages .advantages__list {
       max-width: 640px;
       padding-left: 36px;
@@ -1063,8 +1063,8 @@ img {
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, #292929), color-stop(50%, transparent));
-    background-image: linear-gradient(to top right, #292929 50%, transparent 50%), linear-gradient(to top left, #292929 50%, transparent 50%);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(49%, #292929), color-stop(50%, transparent));
+    background-image: linear-gradient(to top right, #292929 49%, transparent 50%), linear-gradient(to top left, #292929 49%, transparent 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%; }
@@ -1126,6 +1126,103 @@ img {
   .reviews .reviews__arrow {
     display: none; }
 
+@media (min-width: 768px) {
+  .reviews {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 37px;
+    padding-bottom: 64px; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .reviews {
+      padding-left: 64px;
+      padding-right: 64px; } }
+
+@media (min-width: 768px) {
+    .reviews::after {
+      display: none; }
+    .reviews .reviews__title {
+      margin-top: 4px;
+      margin-bottom: 42px;
+      font-size: 40px;
+      line-height: 40px; }
+    .reviews .reviews__send {
+      display: block;
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+      width: 160px; }
+    .reviews .reviews__list {
+      width: 100%;
+      max-width: none;
+      padding-bottom: 0;
+      border: 1px solid #e5ddd5; }
+    .reviews .reviews__item {
+      display: none;
+      width: 480px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 30px;
+      padding-bottom: 35px;
+      border-left: 1px solid #e5ddd5;
+      border-right: 1px solid #e5ddd5; }
+      .reviews .reviews__item:first-child {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .reviews .reviews__container {
+      width: auto;
+      padding-left: 30px; }
+    .reviews .reviews__author-photo {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      margin: 0;
+      margin-top: 8px;
+      border: none; }
+      .reviews .reviews__author-photo img {
+        border-radius: 50%; }
+    .reviews .reviews__author-name {
+      margin-bottom: 12px; }
+    .reviews .reviews__arrow {
+      display: block;
+      width: 7.5%;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      padding: 0;
+      font-size: 0;
+      line-height: 0;
+      background-color: transparent;
+      background-image: url("../img/arrow-left.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 12px 12px;
+      border: none; }
+      .reviews .reviews__arrow--prev {
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1; }
+      .reviews .reviews__arrow--next {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
+    .reviews .reviews__slider {
+      position: relative;
+      top: -4px;
+      margin: 0 auto;
+      background-color: #f8f5f2;
+      padding: 0 25px; } }
+
 .appointment {
   padding-left: 20px;
   padding-right: 20px;
@@ -1143,8 +1240,8 @@ img {
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, #292929), color-stop(50%, transparent));
-    background-image: linear-gradient(to top right, #292929 50%, transparent 50%), linear-gradient(to top left, #292929 50%, transparent 50%);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(49%, #292929), color-stop(50%, transparent));
+    background-image: linear-gradient(to top right, #292929 49%, transparent 50%), linear-gradient(to top left, #292929 49%, transparent 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%; }
@@ -1352,8 +1449,8 @@ img {
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #353535), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, #353535), color-stop(50%, transparent));
-    background-image: linear-gradient(to top right, #353535 50%, transparent 50%), linear-gradient(to top left, #353535 50%, transparent 50%);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #353535), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(49%, #353535), color-stop(50%, transparent));
+    background-image: linear-gradient(to top right, #353535 49%, transparent 50%), linear-gradient(to top left, #353535 49%, transparent 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%; }
@@ -1463,8 +1560,8 @@ img {
     left: 0;
     bottom: 0;
     z-index: 10;
-    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(50%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(50%, #292929), color-stop(50%, transparent));
-    background-image: linear-gradient(to top right, #292929 50%, transparent 50%), linear-gradient(to top left, #292929 50%, transparent 50%);
+    background-image: -webkit-gradient(linear, left bottom, right top, color-stop(49%, #292929), color-stop(50%, transparent)), -webkit-gradient(linear, right bottom, left top, color-stop(49%, #292929), color-stop(50%, transparent));
+    background-image: linear-gradient(to top right, #292929 49%, transparent 50%), linear-gradient(to top left, #292929 49%, transparent 50%);
     background-repeat: no-repeat;
     background-position: 0 0, 100% 0;
     background-size: 50.1% 100%; }
