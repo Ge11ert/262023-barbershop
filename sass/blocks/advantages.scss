@@ -68,7 +68,7 @@
 @media (min-width: $tablet-width) {
   .advantages {
     padding-top: 2px;
-    padding-bottom: 22px;
+    padding-bottom: 50px;
     background: none;
 
     &::after {
@@ -79,7 +79,7 @@
     .advantages__list {
       max-width: 640px;
       padding-left: 36px;
-      padding-right: 36px;
+      padding-right: 34px;
     }
 
     .advantages__item {
