@@ -9,5 +9,17 @@
     margin-top: 12px;
     color: $white;
     border-color: $stroke-dark;
+    word-break: break-all;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+
+    .copyright__link {
+      padding-left: 27px;
+      padding-right: 25px;
+    }
   }
 }

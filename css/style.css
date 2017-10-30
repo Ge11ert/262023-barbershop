@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* stylelint-disable */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -1409,6 +1410,42 @@ img {
   .footer .footer__copyright {
     width: 280px; }
 
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    padding-top: 49px;
+    padding-bottom: 60px; } }
+  @media (min-width: 768px) and (min-width: 768px) {
+    .footer {
+      padding-left: 64px;
+      padding-right: 64px; } }
+
+@media (min-width: 768px) {
+    .footer .footer__contacts {
+      width: 320px;
+      margin-right: 160px; }
+    .footer .footer__social {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      width: 638px;
+      margin-top: 49px; }
+    .footer .footer__copyright {
+      width: 160px; } }
+
 .contacts {
   padding-left: 20px;
   padding-right: 20px;
@@ -1430,6 +1467,30 @@ img {
   .contacts .contacts__phone {
     color: #ffffff;
     border-color: #3f3f3f; }
+
+@media (min-width: 768px) {
+  .contacts {
+    padding: 0; }
+    .contacts .contacts__title {
+      text-transform: uppercase;
+      text-align: left; }
+    .contacts .contacts__address {
+      margin-bottom: 2px; }
+    .contacts .contacts__phone {
+      position: relative;
+      padding: 0;
+      padding-left: 33px;
+      font-weight: normal;
+      text-align: left;
+      border: none; }
+      .contacts .contacts__phone::after {
+        content: "Тел.:";
+        position: absolute;
+        top: 0;
+        left: 0;
+        font: inherit;
+        text-transform: capitalize;
+        letter-spacing: 0.5px; } }
 
 .works {
   padding-left: 20px;
@@ -1676,6 +1737,11 @@ img {
     background-image: url("../img/icon-insta.svg");
     background-size: 36px 36px; }
 
+@media (min-width: 768px) {
+  .social {
+    border-left: 1px solid #3f3f3f;
+    border-right: 1px solid #3f3f3f; } }
+
 .copyright {
   padding-left: 20px;
   padding-right: 20px;
@@ -1690,7 +1756,15 @@ img {
   .copyright .copyright__link {
     margin-top: 12px;
     color: #ffffff;
-    border-color: #3f3f3f; }
+    border-color: #3f3f3f;
+    word-break: break-all; }
+
+@media (min-width: 768px) {
+  .copyright {
+    padding: 0; }
+    .copyright .copyright__link {
+      padding-left: 27px;
+      padding-right: 25px; } }
 
 .slider {
   width: 73px;

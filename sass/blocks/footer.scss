@@ -10,11 +10,37 @@
   }
 
   .footer__social {
-    // width: 320px;
     width: 100%;
   }
 
   .footer__copyright {
     width: 280px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    @include content-padding;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding-top: 49px;
+    padding-bottom: 60px;
+
+    .footer__contacts {
+      width: 320px;
+      margin-right: 160px;
+    }
+
+    .footer__social {
+      order: 2;
+      width: 638px;
+      margin-top: 49px;
+    }
+
+    .footer__copyright {
+      width: 160px;
+    }
   }
 }
