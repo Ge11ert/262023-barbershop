@@ -700,6 +700,10 @@ img {
       .stats .stats__header {
         padding-left: 64px;
         padding-right: 64px; } }
+    @media (min-width: 1200px) {
+      .stats .stats__header {
+        padding-left: 120px;
+        padding-right: 120px; } }
   .stats .stats__slogan {
     margin: 0;
     font-size: 30px;
@@ -763,6 +767,10 @@ img {
       .stats .stats__notice {
         padding-left: 64px;
         padding-right: 64px; } }
+    @media (min-width: 1200px) {
+      .stats .stats__notice {
+        padding-left: 120px;
+        padding-right: 120px; } }
     .stats .stats__notice--top {
       display: none; }
 
@@ -909,6 +917,10 @@ img {
     .advantages {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .advantages {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .advantages::after {
     content: "";
     position: absolute;
@@ -983,7 +995,7 @@ img {
       padding-top: 35px;
       padding-left: 124px;
       padding-bottom: 37px;
-      border-bottom: 1px solid #3f3f3f; }
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
       .advantages .advantages__item:last-child {
         border-bottom: none; }
       .advantages .advantages__item--quick {
@@ -1002,6 +1014,40 @@ img {
       text-align: left; }
     .advantages .advantages__slider {
       display: none; } }
+
+@media (min-width: 1200px) {
+  .advantages {
+    padding-top: 80px;
+    padding-bottom: 67px; }
+    .advantages::after {
+      height: 65px; }
+    .advantages .advantages__list {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding: 0;
+      max-width: 960px; }
+    .advantages .advantages__item {
+      width: 320px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 119px;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border-bottom: none; }
+      .advantages .advantages__item:nth-child(2) {
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1); }
+      .advantages .advantages__item--quick {
+        background-position: center top; }
+      .advantages .advantages__item--cool {
+        background-position: center top; }
+      .advantages .advantages__item--expensive {
+        background-position: center top; }
+    .advantages .advantages__title {
+      text-align: center; }
+    .advantages .advantages__text {
+      text-align: center; } }
 
 .news {
   padding-left: 20px;
@@ -1024,6 +1070,10 @@ img {
     .news {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .news {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .news .news__title {
     margin: 0;
     font-size: 30px;
@@ -1076,6 +1126,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
+    display: block;
     line-height: 0.9; }
   .news .news__text {
     width: 211px;
@@ -1102,13 +1153,17 @@ img {
     padding-top: 42px;
     padding-bottom: 35px; }
     .news .news__title {
+      margin: 0;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
       -webkit-box-ordinal-group: -1;
           -ms-flex-order: -2;
               order: -2;
       margin-bottom: 27px;
-      padding-top: 4px;
-      font-size: 40px;
-      line-height: 40px; }
+      padding-top: 4px; }
     .news .news__list {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -1145,6 +1200,22 @@ img {
       max-width: 400px;
       margin-left: 20px;
       padding-right: 30px; } }
+
+@media (min-width: 1200px) {
+  .news {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 54px;
+    padding-bottom: 39px; }
+    .news .news__title {
+      min-width: 700px;
+      padding-left: 70px;
+      padding-right: 30px; }
+    .news .news__list {
+      max-width: 960px; }
+    .news .news__item {
+      width: 320px; } }
 
 .reviews {
   position: relative;
@@ -1200,6 +1271,10 @@ img {
       .reviews .reviews__item {
         padding-left: 64px;
         padding-right: 64px; } }
+    @media (min-width: 1200px) {
+      .reviews .reviews__item {
+        padding-left: 120px;
+        padding-right: 120px; } }
   .reviews .reviews__container {
     width: 210px; }
   .reviews .reviews__author-photo {
@@ -1241,6 +1316,10 @@ img {
     .reviews {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .reviews {
+      padding-left: 120px;
+      padding-right: 120px; } }
 
 @media (min-width: 768px) {
     .reviews::after {
@@ -1329,6 +1408,10 @@ img {
     .appointment {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .appointment {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .appointment::after {
     content: "";
     position: absolute;
@@ -1647,6 +1730,10 @@ img {
     .footer {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 768px) and (min-width: 1200px) {
+    .footer {
+      padding-left: 120px;
+      padding-right: 120px; } }
 
 @media (min-width: 768px) {
     .footer .footer__contacts {
@@ -1670,6 +1757,10 @@ img {
     .contacts {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .contacts {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .contacts .contacts__title {
     display: block;
     margin-bottom: 10px;
@@ -1718,6 +1809,10 @@ img {
     .works {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .works {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .works::after {
     content: "";
     position: absolute;
@@ -1904,6 +1999,10 @@ img {
     .price {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .price {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .price::after {
     content: "";
     position: absolute;
@@ -2106,6 +2205,10 @@ img {
     .copyright {
       padding-left: 64px;
       padding-right: 64px; } }
+  @media (min-width: 1200px) {
+    .copyright {
+      padding-left: 120px;
+      padding-right: 120px; } }
   .copyright .copyright__link {
     margin-top: 12px;
     color: #ffffff;
