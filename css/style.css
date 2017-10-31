@@ -1741,6 +1741,75 @@ img {
     left: 0;
     bottom: 29px; }
 
+@media (min-width: 768px) {
+  .works {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 54px; }
+    .works .works__title {
+      margin: 0;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      min-width: 480px;
+      margin-top: 3px;
+      margin-bottom: 45px;
+      padding: 0; }
+    .works .works__to-main {
+      display: block;
+      width: 160px;
+      -ms-flex-item-align: start;
+          align-self: flex-start; }
+    .works .works__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      margin-bottom: 41px; }
+    .works .works__image-container {
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+      width: 270px;
+      height: 294px; }
+      .works .works__image-container--month-best {
+        height: 480px; }
+    .works .works__desc {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      padding-top: 38px;
+      padding-left: 50px;
+      padding-right: 41px;
+      padding-bottom: 23px;
+      border-left: none;
+      border-top: 1px solid #e5ddd5; }
+      .works .works__desc--month-best {
+        padding-top: 43px; }
+    .works .works__name {
+      margin-bottom: 26px; }
+    .works .works__service-list {
+      margin-top: auto; }
+    .works .works__service-item:not(:first-child):last-child {
+      margin-bottom: 10px; }
+    .works .works__best {
+      top: 35px;
+      left: -2px; } }
+
 .price {
   padding-left: 20px;
   padding-right: 20px;
@@ -1825,6 +1894,11 @@ img {
     border-style: solid;
     border-width: 25px 0 0 8px;
     border-color: transparent transparent transparent #826550; }
+
+@media (min-width: 768px) {
+  .month-best .month-best__label {
+    padding-left: 20px;
+    padding-right: 23px; } }
 
 .discount {
   border: 1px solid rgba(255, 255, 255, 0.1); }

@@ -56,8 +56,12 @@
               <span class="month-best__label">Работа месяца</span>
             </div>
             <picture>
-              <source type="image/webp" srcset="./img/photo-1-mobile.webp">
-              <img class="works__image" src="./img/photo-1-mobile.jpg" width="280" height="480" alt="">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-1-tablet.webp">
+              <source type="image/webp" srcset="img/photo-1-mobile.webp">
+              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+              <img class="works__image" src="img/photo-1-mobile.jpg" alt="">
             </picture>
           </div>
           <div class="works__desc works__desc--month-best">
@@ -75,7 +79,14 @@
         </article>
         <article class="works__item">
           <div class="works__image-container">
-            <img class="works__image" src="./img/photo-2-mobile.jpg" width="280" height="176" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-2-tablet.webp">
+              <source type="image/webp" srcset="img/photo-2-mobile.webp">
+              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+              <img class="works__image" src="./img/photo-2-mobile.jpg" alt="">
+            </picture>
           </div>
           <div class="works__desc">
             <h2 class="works__name">Саша Мальцев</h2>
@@ -89,7 +100,14 @@
         </article>
         <article class="works__item">
           <div class="works__image-container">
-            <img class="works__image" src="./img/photo-3-mobile.jpg" width="280" height="176" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-3-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-3-tablet.webp">
+              <source type="image/webp" srcset="img/photo-3-mobile.webp">
+              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg">
+              <img class="works__image" src="./img/photo-3-mobile.jpg" alt="">
+            </picture>
           </div>
           <div class="works__desc">
             <h2 class="works__name">Владимир Иваныч</h2>
@@ -104,7 +122,14 @@
         </article>
         <article class="works__item">
           <div class="works__image-container">
-            <img class="works__image" src="./img/photo-4-mobile.jpg" width="280" height="176" alt="">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-4-tablet.webp">
+              <source type="image/webp" srcset="img/photo-4-mobile.webp">
+              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
+              <img class="works__image" src="./img/photo-4-mobile.jpg" alt="">
+            </picture>
           </div>
           <div class="works__desc">
             <h2 class="works__name">Винстон Синий</h2>

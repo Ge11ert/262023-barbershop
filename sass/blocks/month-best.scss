@@ -37,3 +37,12 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .month-best {
+    .month-best__label {
+      padding-left: 20px;
+      padding-right: 23px;
+    }
+  }
+}
