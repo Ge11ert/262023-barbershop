@@ -131,6 +131,11 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 54px;
+    padding-bottom: 103px;
+
+    &::after {
+      height: 41px;
+    }
 
     .works__title {
       @include title-font-tablet;

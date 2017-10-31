@@ -1751,7 +1751,10 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 54px; }
+    padding-top: 54px;
+    padding-bottom: 103px; }
+    .works::after {
+      height: 41px; }
     .works .works__title {
       margin: 0;
       font-size: 40px;
@@ -1863,6 +1866,45 @@ img {
     text-align: right;
     vertical-align: top; }
 
+@media (min-width: 768px) {
+  .price {
+    padding-top: 44px; }
+    .price::after {
+      display: none; }
+    .price .price__title {
+      margin: 0;
+      font-size: 40px;
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      margin-bottom: 48px; }
+    .price .price__table {
+      margin-bottom: 9px; }
+      .price .price__table td {
+        border: 1px solid rgba(255, 255, 255, 0.1); }
+    .price .price__index {
+      display: table-cell;
+      width: 68px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.3); }
+    .price .price__service {
+      padding-top: 13px;
+      padding-left: 19px;
+      padding-right: 11px;
+      text-align: left; }
+    .price .price__washing {
+      display: table-cell;
+      padding-left: 20px;
+      text-align: left; }
+      .price .price__washing--mobile {
+        display: none; }
+    .price .price__value {
+      padding-right: 45px;
+      padding-left: 20px;
+      text-align: left;
+      vertical-align: middle; } }
+
 .month-best .month-best__label {
   position: relative;
   display: inline-block;
@@ -1914,6 +1956,24 @@ img {
     background-repeat: no-repeat;
     background-position: 0 center;
     background-size: 58px 57px; }
+
+@media (min-width: 768px) {
+  .discount {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+    .discount .discount__text {
+      width: auto;
+      padding-top: 20px;
+      padding-bottom: 21px;
+      padding-left: 160px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bold;
+      text-transform: uppercase;
+      background-size: 72px 71px;
+      background-position: left top; } }
 
 .social .social__list {
   margin: 0;

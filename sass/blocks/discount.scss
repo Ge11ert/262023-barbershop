@@ -16,3 +16,26 @@
     background-size: 58px 57px;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .discount {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .discount__text {
+      width: auto;
+      padding-top: 20px;
+      padding-bottom: 21px;
+      padding-left: 160px;
+      font-size: 30px;
+      line-height: 30px;
+      font-weight: bold;
+
+      text-transform: uppercase;
+      background-size: 72px 71px;
+      background-position: left top;
+    }
+  }
+}
