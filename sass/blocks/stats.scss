@@ -199,3 +199,45 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .stats {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 960px;
+    margin-top: -160px;
+
+    .stats__header {
+      flex-direction: column;
+
+      &::after {
+        top: 37px;
+      }
+    }
+
+    .stats__slogan {
+      width: 240px;
+      margin-bottom: 43px;
+    }
+
+    .stats__text {
+      width: 240px;
+      margin-left: 1px;
+      margin-bottom: 29px;
+      padding: 0;
+    }
+
+    .stats__table {
+      width: 640px;
+      z-index: 10;
+    }
+
+    .stats__notice {
+      &--top {
+        padding-top: 0;
+        text-align: left;
+      }
+    }
+  }
+}

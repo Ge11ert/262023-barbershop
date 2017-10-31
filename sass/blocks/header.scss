@@ -45,3 +45,19 @@
     }
   }
 }
+
+
+@media (min-width: $desktop-width) {
+  .header {
+    .header__logo {
+      height: 649px;
+
+      background-image: url("../img/back-desktop.jpg");
+    }
+
+    .header__logo-image {
+      height: 153px;
+      margin-top: 58px;
+    }
+  }
+}

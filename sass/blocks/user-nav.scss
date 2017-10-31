@@ -34,3 +34,24 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 160px;
+
+    .user-nav__link {
+      height: auto;
+      width: auto;
+      padding-top: 24px;
+      padding-bottom: 23px;
+      padding-right: 31px;
+      padding-left: 54px;
+      font-size: 18px;
+      font-weight: bold;
+
+      text-transform: uppercase;
+    }
+  }
+}

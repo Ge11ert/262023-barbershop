@@ -43,3 +43,18 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    width: 800px;
+
+    .site-nav__item {
+      margin-right: 0;
+    }
+
+    .site-nav__link {
+      padding-left: 31px;
+      padding-right: 33px;
+    }
+  }
+}

@@ -92,3 +92,11 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    .main-nav__wrapper {
+      width: 960px;
+    }
+  }
+}
