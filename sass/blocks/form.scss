@@ -286,3 +286,78 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form {
+    width: 960px;
+
+    .form__input-container {
+      &--text {
+        &:nth-of-type(1) {
+          margin-right: 37px;
+        }
+
+        &:nth-of-type(2) {
+          margin-right: 37px;
+        }
+      }
+
+      &--tel {
+        width: 460px;
+        margin-bottom: 0;
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+
+      &--email {
+        width: 460px;
+        margin-bottom: 0;
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+
+      &--additional {
+        margin-bottom: 64px;
+      }
+
+      &--radio {
+        &:nth-child(n) {
+          margin-right: 129px;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .form__fields {
+      &--contacts {
+        display: flex;
+      }
+
+      &--radio {
+        justify-content: flex-start;
+        padding: 0;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+
+      &--checkbox {
+        margin-bottom: 32px;
+      }
+    }
+
+    .form__field-title {
+      margin-bottom: 51px;
+
+      &--checkbox {
+        margin-bottom: 69px;
+      }
+    }
+  }
+}

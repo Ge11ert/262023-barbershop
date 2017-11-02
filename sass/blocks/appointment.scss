@@ -41,3 +41,14 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .appointment {
+    padding-bottom: 47px;
+
+    .appointment__title {
+      min-width: 800px;
+      margin-right: 0;
+    }
+  }
+}

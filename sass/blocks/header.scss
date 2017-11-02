@@ -53,6 +53,14 @@
       height: 649px;
 
       background-image: url("../img/back-desktop.jpg");
+
+      &--inner {
+        height: 307px;
+
+        &::after {
+          height: 64px;
+        }
+      }
     }
 
     .header__logo-image {
