@@ -23,7 +23,11 @@
     padding-bottom: 18px;
     border-bottom: 1px solid $stroke-color;
 
-    &:last-of-type {
+    &:nth-of-type(n+3) {
+      display: none;
+    }
+
+    &:nth-of-type(2) {
       border-bottom: none;
     }
   }
@@ -102,6 +106,11 @@
       padding: 0;
 
       border-bottom: none;
+
+      &:nth-of-type(3),
+      &:nth-of-type(4) {
+        display: flex;
+      }
     }
 
     .news__button {
@@ -138,10 +147,27 @@
 
     .news__list {
       max-width: 960px;
+      justify-content: flex-start;
+      margin: 0;
     }
 
     .news__item {
-      width: 320px;
+      width: 290px;
+      margin-right: 30px;
+
+      &:nth-of-type(3n+3) {
+        width: 320px;
+        margin-right: 0;
+      }
+
+      &:nth-of-type(5),
+      &:nth-of-type(6) {
+        display: flex;
+      }
+    }
+
+    .news__text {
+      padding-right: 0;
     }
   }
 }

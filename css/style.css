@@ -1097,7 +1097,9 @@ img {
     padding-top: 16px;
     padding-bottom: 18px;
     border-bottom: 1px solid #e5ddd5; }
-    .news .news__item:last-of-type {
+    .news .news__item:nth-of-type(n+3) {
+      display: none; }
+    .news .news__item:nth-of-type(2) {
       border-bottom: none; }
   .news .news__date {
     position: relative;
@@ -1184,6 +1186,10 @@ img {
       margin-top: 26px;
       padding: 0;
       border-bottom: none; }
+      .news .news__item:nth-of-type(3), .news .news__item:nth-of-type(4) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
     .news .news__button {
       -webkit-box-ordinal-group: 0;
           -ms-flex-order: -1;
@@ -1213,9 +1219,23 @@ img {
       padding-left: 70px;
       padding-right: 30px; }
     .news .news__list {
-      max-width: 960px; }
+      max-width: 960px;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      margin: 0; }
     .news .news__item {
-      width: 320px; } }
+      width: 290px;
+      margin-right: 30px; }
+      .news .news__item:nth-of-type(3n+3) {
+        width: 320px;
+        margin-right: 0; }
+      .news .news__item:nth-of-type(5), .news .news__item:nth-of-type(6) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+    .news .news__text {
+      padding-right: 0; } }
 
 .reviews {
   position: relative;
@@ -1325,10 +1345,14 @@ img {
     .reviews::after {
       display: none; }
     .reviews .reviews__title {
-      margin-top: 4px;
-      margin-bottom: 42px;
+      margin: 0;
       font-size: 40px;
-      line-height: 40px; }
+      line-height: 40px;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: left;
+      margin-top: 4px;
+      margin-bottom: 42px; }
     .reviews .reviews__send {
       display: block;
       -ms-flex-item-align: start;
@@ -1398,6 +1422,60 @@ img {
       margin: 0 auto;
       background-color: #f8f5f2;
       padding: 0 25px; } }
+
+@media (min-width: 1200px) {
+  .reviews {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 48px; }
+    .reviews::before {
+      content: "";
+      display: block;
+      width: 100%;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+    .reviews .reviews__title {
+      min-width: 700px;
+      padding-left: 70px;
+      padding-right: 30px; }
+    .reviews .reviews__list {
+      max-width: 960px;
+      margin: 0;
+      margin-bottom: 43px;
+      border: none; }
+    .reviews .reviews__item {
+      -webkit-box-align: stretch;
+          -ms-flex-align: stretch;
+              align-items: stretch;
+      margin-left: 21px;
+      margin-right: 21px;
+      padding: 0;
+      border: none; }
+    .reviews .reviews__author-photo {
+      width: 248px;
+      height: 160px;
+      margin: 0; }
+      .reviews .reviews__author-photo img {
+        width: 248px;
+        height: 160px;
+        border-radius: 0; }
+    .reviews .reviews__container {
+      padding-top: 30px;
+      padding-left: 71px;
+      padding-right: 40px;
+      padding-bottom: 15px;
+      border: 1px solid #e5ddd5; }
+    .reviews .reviews__arrow {
+      width: 50px;
+      border: 1px solid #e5ddd5; }
+    .reviews .reviews__slider {
+      top: 0;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
+      margin: 0; } }
 
 .appointment {
   padding-left: 20px;
@@ -1747,6 +1825,20 @@ img {
       margin-top: 49px; }
     .footer .footer__copyright {
       width: 160px; } }
+
+@media (min-width: 1200px) {
+  .footer .footer__contacts {
+    margin-right: 0; }
+  .footer .footer__social {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 320px;
+    margin-top: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .footer .footer__copyright {
+    width: 320px; } }
 
 .contacts {
   padding-left: 20px;
@@ -2154,6 +2246,9 @@ img {
       background-size: 72px 71px;
       background-position: left top; } }
 
+.social .social__text {
+  display: none; }
+
 .social .social__list {
   margin: 0;
   padding: 0;
@@ -2194,6 +2289,43 @@ img {
     border-left: 1px solid #3f3f3f;
     border-right: 1px solid #3f3f3f; } }
 
+@media (min-width: 1200px) {
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: none; }
+    .social .social__text {
+      display: block;
+      color: #ffffff; }
+    .social .social__list {
+      border: none; }
+    .social .social__item {
+      width: 48px;
+      border: 1px solid #3f3f3f; }
+      .social .social__item:nth-child(2) {
+        margin-left: 6px;
+        margin-right: 6px; }
+    .social .social__link {
+      width: 48px;
+      height: 48px; }
+      .social .social__link--vk {
+        background-size: 15px 9px; }
+      .social .social__link--fb {
+        background-size: 10px 21px; }
+      .social .social__link--ig {
+        background-size: 19px 19px; } }
+
 .copyright {
   padding-left: 20px;
   padding-right: 20px;
@@ -2221,6 +2353,27 @@ img {
     .copyright .copyright__link {
       padding-left: 27px;
       padding-right: 25px; } }
+
+@media (min-width: 1200px) {
+  .copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    .copyright span {
+      padding-right: 38px; }
+    .copyright .copyright__link {
+      width: 160px;
+      margin-top: 0; } }
 
 .slider {
   width: 73px;

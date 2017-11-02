@@ -44,3 +44,22 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    .footer__contacts {
+      margin-right: 0;
+    }
+
+    .footer__social {
+      order: 0;
+      width: 320px;
+      margin-top: 0;
+      box-sizing: border-box;
+    }
+
+    .footer__copyright {
+      width: 320px;
+    }
+  }
+}

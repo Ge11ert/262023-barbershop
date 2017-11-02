@@ -14,3 +14,6 @@ menuButton.addEventListener("click", function(e) {
   menuButton.classList.toggle("main-nav__toggle--closed");
   menuList.classList.toggle("main-nav__wrapper--closed");
 });
+
+
+svg4everybody();
