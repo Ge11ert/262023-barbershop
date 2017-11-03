@@ -208,3 +208,120 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .works {
+    padding-bottom: 47px;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 100%;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .works__title {
+      min-width: 800px;
+      max-width: 960px;
+      order: -3;
+      margin-bottom: 87px;
+    }
+
+    .works__to-main {
+      order: -2;
+    }
+
+    .works__item {
+      width: 294px;
+      flex-direction: column;
+      margin-right: 39px;
+
+      &--month-best {
+        position: relative;
+        width: 960px;
+        flex-direction: row;
+        order: -1;
+        margin-right: 0;
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+        margin-bottom: 41px;
+      }
+    }
+
+    .works__image-container {
+      width: 294px;
+      height: 294px;
+
+      &--month-best {
+        position: static;
+        width: 480px;
+        height: 480px;
+      }
+    }
+
+    .works__desc {
+      padding-top: 29px;
+      padding-left: 34px;
+      padding-right: 25px;
+      padding-bottom: 31px;
+      border-top: none;
+      border-left: 1px solid $stroke-color;
+
+      &--month-best {
+        padding-top: 128px;
+        padding-left: 41px;
+        padding-right: 100px;
+        padding-bottom: 27px;
+        border-left: none;
+        border-top: 1px solid $stroke-color;
+
+        .works__comment {
+          padding-right: 30px;
+        }
+      }
+    }
+
+    .works__comment {
+      margin-bottom: 25px;
+    }
+
+    .works__service-item {
+      &:nth-child(n) {
+        margin-bottom: 0;
+      }
+
+      &:not(:first-child):last-child {
+        margin-bottom: 0;
+      }
+
+      &--hair {
+        background-position: left top 2px;
+      }
+
+      &--beard {
+        padding-left: 41px;
+        background-position: left top 2px;
+      }
+
+      &--mustache {
+        padding-left: 53px;
+
+        &::after {
+          top: 7px;
+          left: -4px;
+        }
+      }
+    }
+
+    .works__best {
+      right: 0;
+      left: auto;
+      top: 26px;
+    }
+  }
+}

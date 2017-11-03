@@ -2132,6 +2132,91 @@ img {
       top: 35px;
       left: -2px; } }
 
+@media (min-width: 1200px) {
+  .works {
+    padding-bottom: 47px; }
+    .works::before {
+      content: "";
+      display: block;
+      width: 100%; }
+    .works::after {
+      display: none; }
+    .works .works__title {
+      min-width: 800px;
+      max-width: 960px;
+      -webkit-box-ordinal-group: -2;
+          -ms-flex-order: -3;
+              order: -3;
+      margin-bottom: 87px; }
+    .works .works__to-main {
+      -webkit-box-ordinal-group: -1;
+          -ms-flex-order: -2;
+              order: -2; }
+    .works .works__item {
+      width: 294px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      margin-right: 39px; }
+      .works .works__item--month-best {
+        position: relative;
+        width: 960px;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-ordinal-group: 0;
+            -ms-flex-order: -1;
+                order: -1;
+        margin-right: 0; }
+      .works .works__item:last-of-type {
+        margin-right: 0;
+        margin-bottom: 41px; }
+    .works .works__image-container {
+      width: 294px;
+      height: 294px; }
+      .works .works__image-container--month-best {
+        position: static;
+        width: 480px;
+        height: 480px; }
+    .works .works__desc {
+      padding-top: 29px;
+      padding-left: 34px;
+      padding-right: 25px;
+      padding-bottom: 31px;
+      border-top: none;
+      border-left: 1px solid #e5ddd5; }
+      .works .works__desc--month-best {
+        padding-top: 128px;
+        padding-left: 41px;
+        padding-right: 100px;
+        padding-bottom: 27px;
+        border-left: none;
+        border-top: 1px solid #e5ddd5; }
+        .works .works__desc--month-best .works__comment {
+          padding-right: 30px; }
+    .works .works__comment {
+      margin-bottom: 25px; }
+    .works .works__service-item:nth-child(n) {
+      margin-bottom: 0; }
+    .works .works__service-item:not(:first-child):last-child {
+      margin-bottom: 0; }
+    .works .works__service-item--hair {
+      background-position: left top 2px; }
+    .works .works__service-item--beard {
+      padding-left: 41px;
+      background-position: left top 2px; }
+    .works .works__service-item--mustache {
+      padding-left: 53px; }
+      .works .works__service-item--mustache::after {
+        top: 7px;
+        left: -4px; }
+    .works .works__best {
+      right: 0;
+      left: auto;
+      top: 26px; } }
+
 .price {
   padding-left: 20px;
   padding-right: 20px;
@@ -2228,6 +2313,28 @@ img {
       text-align: left;
       vertical-align: middle; } }
 
+@media (min-width: 1200px) {
+  .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 78px;
+    padding-bottom: 84px; }
+    .price .price__table {
+      width: 630px;
+      margin-bottom: 0;
+      margin-right: 60px; }
+    .price .price__offer {
+      margin-top: 88px;
+      width: 269px; }
+    .price .price__service {
+      padding-right: 20px; }
+    .price .price__value {
+      padding-right: 42px; } }
+
 .month-best .month-best__label {
   position: relative;
   display: inline-block;
@@ -2265,6 +2372,21 @@ img {
     padding-left: 20px;
     padding-right: 23px; } }
 
+@media (min-width: 1200px) {
+  .month-best .month-best__label {
+    padding-left: 23px;
+    padding-right: 20px; }
+    .month-best .month-best__label::before {
+      right: auto;
+      left: -7px;
+      border-width: 0 8px 25px 0;
+      border-color: transparent #826550 transparent transparent; }
+    .month-best .month-best__label::after {
+      right: auto;
+      left: -7px;
+      border-width: 0 0 25px 8px;
+      border-color: transparent transparent #826550 transparent; } }
+
 .discount {
   border: 1px solid rgba(255, 255, 255, 0.1); }
   .discount .discount__text {
@@ -2297,6 +2419,28 @@ img {
       text-transform: uppercase;
       background-size: 72px 71px;
       background-position: left top; } }
+
+@media (min-width: 1200px) {
+  .discount {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 20px 50px;
+    background-image: url("../img/clock.svg");
+    background-repeat: no-repeat;
+    background-position: center top 34px;
+    background-size: 142px 139px; }
+    .discount .discount__text {
+      margin-top: auto;
+      padding: 0;
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: normal;
+      text-transform: none;
+      text-align: center;
+      background: none; } }
 
 .social .social__text {
   display: none; }
