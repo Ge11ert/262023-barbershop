@@ -1,0 +1,43 @@
+.copyright {
+  @include content-padding;
+  padding-top: 28px;
+  padding-bottom: 24px;
+  color: $white;
+  text-align: center;
+
+  .copyright__link {
+    margin-top: 12px;
+    color: $white;
+    border-color: $stroke-dark;
+    word-break: break-all;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    padding: 0;
+
+    .copyright__link {
+      padding-left: 27px;
+      padding-right: 25px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    span {
+      padding-right: 38px;
+    }
+
+    .copyright__link {
+      width: 160px;
+      margin-top: 0;
+    }
+  }
+}

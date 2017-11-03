@@ -1,0 +1,243 @@
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $bg-grey;
+
+  .stats__header {
+    @include content-padding;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 28px;
+    padding-bottom: 26px;
+    background-color: $white;
+  }
+
+  .stats__slogan {
+    @include title-font-mobile;
+    display: block;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    padding: 0 49px;
+    color: $black;
+  }
+
+  .stats__text {
+    max-width: 280px;
+    margin: 0 auto;
+    font-size: 20px;
+    color: $black;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+
+  .stats__table {
+    width: 100%;
+    max-width: 320px;
+    color: $white;
+    background-color: #404040;
+    border-collapse: collapse;
+  }
+
+  .stats__row {
+    &:nth-child(2n+2) {
+      background-color: $light-grey;
+    }
+
+    &:nth-child(3) {
+      background-color: $mid-grey;
+    }
+
+    &:nth-child(4) {
+      background-color: #404040;
+    }
+  }
+
+  .stats__value {
+    width: 50%;
+    padding: 20px 0 19px $padding-mobile;
+    font-size: 40px;
+    line-height: 1;
+    font-weight: bold;
+
+    sup {
+      font-weight: normal;
+      top: -0.3em;
+      margin-left: 5px;
+    }
+  }
+
+  .stats__field {
+    padding: 17px 22px 19px 0;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .stats__notice {
+    @include content-padding;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: rgba($white, 0.3);
+    text-align: center;
+    background-color: $bg-grey;
+
+    &--top {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    width: 640px;
+    margin: 0 auto;
+    margin-top: -184px;
+
+    .stats__header {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 40px 28px;
+      z-index: 2;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 42px;
+        left: -21px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 21px 21px 0;
+        border-color: transparent #ffffff transparent transparent;
+      }
+    }
+
+    .stats__slogan {
+      max-width: none;
+      width: 280px;
+      margin: 0;
+      padding: 0;
+
+      font-size: 40px;
+      line-height: 40px;
+      text-transform: none;
+      text-align: left;
+    }
+
+    .stats__text {
+      max-width: none;
+      width: 280px;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 5px 31px 0;
+      text-align: left;
+    }
+
+    .stats__notice {
+      display: none;
+
+      &--top {
+        display: block;
+        width: auto;
+        padding: 0;
+        padding-top: 13px;
+        padding-left: 2px;
+        background-color: $white;
+        color: rgba($black, 0.3);
+      }
+    }
+
+    .stats__table {
+      max-width: none;
+
+      tbody {
+        display: flex;
+        flex-wrap: wrap;
+        width: 640px;
+      }
+    }
+
+    .stats__row {
+      display: block;
+      width: 250px;
+      padding: 25px 34px;
+      padding-right: 36px;
+      padding-bottom: 28px;
+
+      &:nth-child(2) {
+        padding-left: 31px;
+        padding-right: 39px;
+      }
+    }
+
+    .stats__value {
+      display: block;
+      width: auto;
+      padding: 0;
+      margin-bottom: 7px;
+      font-size: 72px;
+      line-height: 1;
+    }
+
+    .stats__field {
+      display: block;
+      width: auto;
+      padding: 0;
+      font-size: 20px;
+      line-height: 27px;
+      text-align: left;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    width: 960px;
+    margin-top: -160px;
+
+    .stats__header {
+      flex-direction: column;
+
+      &::after {
+        top: 37px;
+      }
+    }
+
+    .stats__slogan {
+      width: 240px;
+      margin-bottom: 43px;
+    }
+
+    .stats__text {
+      width: 240px;
+      margin-left: 1px;
+      margin-bottom: 29px;
+      padding: 0;
+    }
+
+    .stats__table {
+      width: 640px;
+      z-index: 10;
+    }
+
+    .stats__notice {
+      &--top {
+        padding-top: 0;
+        text-align: left;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.slider {
+  width: 73px;
+  display: flex;
+  justify-content: space-between;
+
+  .slider__button {
+    width: 7px;
+    height: 7px;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    border: 1px solid $white;
+
+    transform: rotate(45deg);
+
+    &--dark {
+      border-color: #353535;
+    }
+
+    &--active {
+      background-color: $white;
+    }
+
+    &--active-dark {
+      background-color: #353535;
+    }
+  }
+}
