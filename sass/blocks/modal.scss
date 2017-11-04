@@ -1,0 +1,109 @@
+.modal {
+  padding: 33px 20px 37px;
+  background-color: $beige;
+
+  .modal__title {
+    @include title-font-mobile;
+    margin-bottom: 13px;
+  }
+
+  .modal__info-text {
+    margin: 0;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .modal__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .modal__input-container {
+    position: relative;
+    width: 100%;
+    margin: 0;
+
+    &:first-of-type {
+      margin-bottom: 6px;
+    }
+
+    &:last-of-type {
+      margin-bottom: 26px;
+    }
+  }
+
+  .modal__input {
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 17px;
+    padding-right: 37px;
+    box-sizing: border-box;
+
+    font-family: inherit;
+    line-height: 30px;
+    color: $black;
+    border: 1px solid $stroke-color;
+
+    &::placeholder {
+      color: $black;
+      opacity: 1;
+    }
+  }
+
+  .modal__icon {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    width: 17px;
+    height: 17px;
+    transform: translateY(-50%);
+  }
+
+  .modal__memorize-me {
+    position: relative;
+    margin-bottom: 29px;
+    padding: 2px 0 1px;
+    padding-left: 48px;
+    line-height: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      left: 0;
+      top: 0;
+      width: 31px;
+      height: 31px;
+      border: 1px solid $stroke-color;
+      background-color: $white;
+    }
+  }
+
+  .modal__restore {
+    align-self: flex-start;
+    padding-top: 1px;
+    line-height: 30px;
+    color: $black;
+    text-decoration: underline;
+  }
+
+  .modal__login-button {
+    width: calc(50% - 10px);
+    padding: 13px;
+    box-sizing: border-box;
+    font: inherit;
+    line-height: 24px;
+    font-weight: bold;
+    color: $white;
+    text-transform: uppercase;
+    background: none;
+    border: none;
+    background-color: $light-brown;
+  }
+
+  .modal__close {
+    width: calc(50% - 10px);
+  }
+}
