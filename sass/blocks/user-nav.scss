@@ -12,6 +12,10 @@
     text-decoration: none;
 
     background-color: $nav-brown;
+
+    &[href]:active {
+      color: rgba($white, 0.3);
+    }
   }
 
   .user-nav__icon-login {
