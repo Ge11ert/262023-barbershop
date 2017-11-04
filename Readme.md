@@ -5,6 +5,9 @@
 * Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
 ---
 
+Опубликованная версия проекта доступна по адресу: https://ge11ert.github.io/262023-barbershop/index.html
+
+
 **Обратите внимание на файл:**
 
 - [Contributing.md](Contributing.md) — руководство по внесению изменений.

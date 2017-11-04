@@ -5,3 +5,11 @@ node_js:
 
 notifications:
   email: false
+
+after_success:
+  deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: 4e58c117927a2da74cf0ec504b7a55eab0c0f1c9 # Set in travis-ci.org dashboard
+    on:
+      branch: master
