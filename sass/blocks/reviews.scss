@@ -159,6 +159,14 @@
       &--next {
         transform: rotate(180deg);
       }
+
+      &:active {
+        background-color: #d5c9bd;
+      }
+
+      &:focus {
+        outline: none;
+      }
     }
 
     .reviews__slider {

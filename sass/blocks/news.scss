@@ -30,6 +30,36 @@
     &:nth-of-type(2) {
       border-bottom: none;
     }
+
+    &:hover {
+      .news__date {
+        background-color: $light-brown;
+      }
+
+      .news__date::after {
+        border-color: $light-brown transparent transparent transparent;
+      }
+
+      .news__text {
+        color: $light-brown;
+        text-decoration: underline;
+      }
+    }
+
+    &:active {
+      .news__date {
+        background-color: $nav-brown;
+        color: rgba($white, 0.3);
+      }
+
+      .news__date::after {
+        border-color: $nav-brown transparent transparent transparent;
+      }
+
+      .news__text {
+        color: $nav-brown;
+      }
+    }
   }
 
   .news__date {
@@ -65,6 +95,7 @@
   .news__text {
     width: 211px;
     margin: 0;
+    color: $black;
   }
 
   .news__button {
